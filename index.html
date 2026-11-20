@@ -3,107 +3,96 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MOTÍN - Estrategia Comercial</title>
+<title>MOTÍN - Estudio Creativo Independiente</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,Arial,sans-serif}
-body{background:#111;color:#F5EFE6;line-height:1.6}
-header{padding:20px 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;background:#111;z-index:10}
-.logo{font-size:32px;font-weight:900;letter-spacing:2px}
-.logo span{color:#FF4D1C}
-nav a{color:#F5EFE6;text-decoration:none;margin:0 12px;font-size:14px}
-.btn{background:#FF4D1C;color:#fff;padding:12px 20px;border-radius:999px;text-decoration:none;font-weight:700;display:inline-block}
-.hero{padding:80px 5%;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
-.hero h1{font-size:64px;line-height:0.95}
-.hero h1 em{color:#FF4D1C;font-style:normal}
-.hero p{margin:20px 0;color:#ccc;max-width:520px}
-section{padding:60px 5%}
-h2{font-size:38px;margin-bottom:8px}
-.sub{color:#aaa;margin-bottom:30px}
-.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
-.card{background:#1C1C1C;border:1px solid #2a2a2a;border-radius:20px;padding:22px}
-.card h3{font-size:20px;margin:10px 0 6px}
-.price{color:#FF4D1C;font-size:26px;font-weight:900}
-.card ul{margin:12px 0 16px 18px;color:#ccc;font-size:14px}
-.card .tag{font-size:11px;letter-spacing:1px;color:#FF4D1C;text-transform:uppercase;font-weight:800}
-.muestras .card{min-height:300px}
-.badge{background:#222;border:1px solid #333;padding:6px 10px;border-radius:999px;font-size:12px;display:inline-block;margin:3px 2px}
-footer{padding:40px 5%;border-top:1px solid #222;text-align:center;color:#888}
-.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:14px 20px;border-radius:999px;text-decoration:none;font-weight:800;box-shadow:0 10px 30px rgba(0,0,0,.4)}
-@media(max-width:900px){.hero{grid-template-columns:1fr}.hero h1{font-size:44px}.grid{grid-template-columns:1fr 1fr}nav{display:none}}
-@media(max-width:520px){.grid{grid-template-columns:1fr}}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, Helvetica, sans-serif}
+body{background:#f4f1ea;color:#111}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 5%;background:#f4f1ea;position:sticky;top:0;z-index:10}
+.logo{font-size:28px;font-weight:900;letter-spacing:-1px}
+nav{display:flex;gap:22px;align-items:center;font-size:12px;letter-spacing:1px}
+nav a{color:#111;text-decoration:none;font-weight:700}
+.btn-negro{background:#111;color:#fff !important;padding:10px 14px}
+.hero{display:flex;gap:40px;padding:60px 5%;align-items:center;flex-wrap:wrap}
+.hero-text{flex:1;min-width:300px}
+.hero-text small{font-size:11px;letter-spacing:2px;color:#666}
+.hero h1{font-size:72px;line-height:0.9;font-weight:900;letter-spacing:-2px;margin:16px 0 10px}
+.hero h1 span{color:#e30613}
+.hero p{max-width:480px;color:#444;line-height:1.6;margin:20px 0}
+.btn{ display:inline-block;background:#111;color:#fff;padding:14px 20px;text-decoration:none;font-weight:800;font-size:13px}
+.hero-img{flex:1;min-width:300px;position:relative}
+.hero-img img{width:100%;height:520px;object-fit:cover;display:block;filter:grayscale(100%) contrast(1.1)}
+.hero-img div{position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,0.7);color:#fff;font-size:11px;letter-spacing:1px;padding:12px;text-align:center}
+.barra{background:#111;color:#fff;display:flex;justify-content:space-between;padding:14px 5%;font-size:12px;letter-spacing:1px;font-weight:800}
+section{padding:70px 5%}
+.titulo{font-size:48px;font-weight:900;line-height:0.95}
+.titulo span{color:#e30613}
+.sub{color:#555;margin:14px 0 40px;max-width:600px;line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.card{background:#111;color:#fff;padding:28px;border-top:6px solid #e30613}
+.card:nth-child(even){background:#fff;color:#111;border:1px solid #111}
+.card b{font-size:40px;color:#e30613}
+.card h3{font-size:22px;margin:14px 0 10px}
+.card p{font-size:14px;line-height:1.6;color:#ddd}
+.card:nth-child(even) p{color:#444}
+.card a{display:inline-block;margin-top:18px;background:#e30613;color:#fff;padding:10px 14px;text-decoration:none;font-weight:800;font-size:13px}
+.metodo{background:#111;color:#fff;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px}
+.metodo h4{color:#e30613;font-size:28px}
+.metodo p{color:#ccc;line-height:1.6;font-size:14px;margin-top:10px}
+.contacto{text-align:center}
+.contacto h2{font-size:56px;font-weight:900;line-height:0.95}
+.contacto h2 span{color:#e30613}
+footer{background:#111;color:#fff;padding:30px 5%;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12px}
+@media(max-width:700px){.hero h1{font-size:52px}.titulo{font-size:36px}.contacto h2{font-size:38px}nav{display:none}}
 </style>
 </head>
 <body>
 
 <header>
-<div class="logo">MOTÍN<span>.</span></div>
-<nav><a href="#servicios">Servicios</a><a href="#muestras">Muestras</a><a href="#metodo">Método</a><a href="#contacto">Contacto</a></nav>
-<a class="btn" href="https://wa.me/56930013641?text=Hola%20MOTÍN,%20quiero%20un%20diagnóstico">Habla con MOTÍN</a>
+<div class="logo">MOTÍN</div>
+<nav><a href="#">INICIO</a><a href="#servicios">SERVICIOS</a><a href="#metodo">MÉTODO</a><a href="#nosotros">NOSOTROS</a><a href="#contacto">CONTACTO</a><a href="#contacto" class="btn-negro">HABLEMOS</a></nav>
 </header>
 
 <div class="hero">
-<div>
-<h1>Estrategia comercial para crecer con <em>claridad.</em></h1>
-<p>Somos una agencia chilena que diseña, valida y escala tu estrategia comercial. Sin humo. Con diagnóstico, plan y seguimiento.</p>
-<a class="btn" href="https://wa.me/56930013641?text=Hola%20MOTÍN,%20quiero%20reservar%20un%20diagnóstico">Reservar diagnóstico - $49.990</a>
-<a href="#muestras" style="color:#fff;margin-left:16px">Ver muestras →</a>
+<div class="hero-text">
+<small>ESTUDIO CREATIVO INDEPENDIENTE / CHILE</small>
+<h1>NO VINIMOS A<br>PASAR<br><span>DESAPERCIBIDOS.</span></h1>
+<p>Estrategia, creatividad y dirección para negocios que quieren dejar de improvisar y empezar a avanzar.</p>
+<a class="btn" href="#contacto">HABLEMOS DE TU NEGOCIO</a>
 </div>
-<div style="background:#1C1C1C;border-radius:24px;padding:28px">
-<h3 style="font-size:28px">¿Qué problema resuelves hoy?</h3>
-<p style="color:#ccc;margin-top:10px">Si recibes consultas pero no cierras, si vendes sin plan, o si necesitas orden para crecer, MOTÍN es para ti.</p>
-<div style="margin-top:20px"><span class="badge">Diagnóstico en 7 días</span><span class="badge">Precios claros</span><span class="badge">Santiago, Chile</span></div>
+<div class="hero-img">
+<img src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?q=80&w=1200&auto=format&fit=crop" alt="MOTÍN">
+<div>LA INDIFERENCIA NO ES UNA OPCIÓN.</div>
 </div>
 </div>
+<div class="barra"><span>ESTRATEGIA • CREATIVIDAD • DIRECCIÓN</span><span>SIN RUIDO. CON INTENCIÓN.</span></div>
 
 <section id="servicios">
-<h2>Servicios</h2>
-<p class="sub">Paquetes claros, orientados a resultados. Elige por dónde partir.</p>
+<h2 class="titulo">LOS 5 SERVICIOS<br><span>DE MOTÍN.</span></h2>
+<p class="sub">Sin humo. Sin plantillas. Todo con intención y pensado para que tu marca se vea seria, fuerte y venda.</p>
 <div class="grid">
-
-<div class="card"><span class="tag">01 / Diagnóstico</span><h3>Diagnóstico comercial</h3><div class="price">desde $49.990 CLP</div><p style="font-size:14px;color:#ccc;margin-top:8px"><b>Problema:</b> Vendes sin tener claro qué está fallando.</p><ul><li>Revisión del proceso comercial</li><li>Análisis de oferta y recorrido</li><li>Identificación de fricciones</li><li>Informe con prioridades</li></ul><p style="font-size:13px;color:#aaa">Plazo: 7 a 10 días hábiles</p><br><a class="btn" href="https://wa.me/56930013641?text=Quiero%20el%20Diagnóstico%20comercial">Cotizar</a></div>
-
-<div class="card"><span class="tag">02 / Estrategia</span><h3>Estrategia comercial</h3><div class="price">desde $119.990 CLP</div><p style="font-size:14px;color:#ccc;margin-top:8px"><b>Problema:</b> Necesitas un plan claro para vender.</p><ul><li>Definición de cliente ideal</li><li>Propuesta de valor y posicionamiento</li><li>Plan de acción comercial</li><li>Indicadores y prioridades</li></ul><p style="font-size:13px;color:#aaa">Plazo: 7 a 10 días hábiles</p><br><a class="btn" href="https://wa.me/56930013641?text=Quiero%20la%20Estrategia%20comercial">Cotizar</a></div>
-
-<div class="card"><span class="tag">03 / Captación</span><h3>Campañas de captación</h3><div class="price">desde $149.990 CLP</div><p style="font-size:14px;color:#ccc;margin-top:8px"><b>Problema:</b> Necesitas generar consultas de forma constante.</p><ul><li>Estrategia de campaña</li><li>Segmentación y mensajes</li><li>Estructura de anuncios</li><li>Plan de optimización</li></ul><p style="font-size:13px;color:#aaa">Plazo: 7 a 10 días hábiles</p><br><a class="btn" href="https://wa.me/56930013641?text=Quiero%20Campañas%20de%20captación">Cotizar</a></div>
-
-<div class="card"><span class="tag">04 / Conversión</span><h3>Sistemas de conversión</h3><div class="price">desde $199.990 CLP</div><p style="font-size:14px;color:#ccc;margin-top:8px"><b>Problema:</b> Recibes consultas pero el recorrido tiene fricciones.</p><ul><li>Revisión del proceso comercial</li><li>Optimización de la oferta</li><li>Análisis del recorrido del cliente</li><li>Guiones de atención y seguimiento</li></ul><p style="font-size:13px;color:#aaa">Plazo: 7 a 10 días hábiles</p><br><a class="btn" href="https://wa.me/56930013641?text=Quiero%20Sistemas%20de%20conversión">Cotizar</a></div>
-
-<div class="card"><span class="tag">05 / Dirección</span><h3>Dirección estratégica mensual</h3><div class="price">desde $249.990 CLP / mes</div><p style="font-size:14px;color:#ccc;margin-top:8px"><b>Problema:</b> Necesitas continuidad para revisar decisiones.</p><ul><li>Reunión estratégica mensual</li><li>Seguimiento de indicadores</li><li>Análisis de resultados</li><li>Planificación mensual + Informe</li></ul><p style="font-size:13px;color:#aaa">Ciclo mensual</p><br><a class="btn" href="https://wa.me/56930013641?text=Quiero%20Dirección%20estratégica%20mensual">Cotizar</a></div>
-
+<div class="card"><b>01</b><h3>Estrategia de Marca</h3><p>Definimos a quién le hablas, qué vendes y por qué te van a elegir a ti y no a otro.</p><a href="#contacto">QUIERO ESTE →</a></div>
+<div class="card"><b>02</b><h3>Branding / Identidad</h3><p>Logo, colores, tipografía y sistema visual completo. Que se vea profesional desde el día 1.</p><a href="#contacto">QUIERO ESTE →</a></div>
+<div class="card"><b>03</b><h3>Contenido que Vende</h3><p>Ideas, guiones, fotos y videos pensados para Instagram, TikTok y WhatsApp. No contenido por llenar.</p><a href="#contacto">QUIERO ESTE →</a></div>
+<div class="card"><b>04</b><h3>Dirección Creativa</h3><p>Dirigimos tu sesión, tu campaña y tu imagen para que todo se vea coherente y con carácter.</p><a href="#contacto">QUIERO ESTE →</a></div>
+<div class="card"><b>05</b><h3>Gestión de Redes</h3><p>Plan mensual, calendario, diseño y publicación. Tú te dedicas a vender, nosotras a que se vea increíble.</p><a href="#contacto">QUIERO ESTE →</a></div>
 </div>
 </section>
 
-<section id="muestras" class="muestras">
-<h2>Muestras de entregables</h2>
-<p class="sub">Estructuras y enfoques que pueden formar parte del trabajo: diagnóstico, marca, campañas, conversión e informes. Son demostraciones, no casos de clientes.</p>
-<div class="grid">
-
-<div class="card"><span class="tag">01 / Diagnóstico</span><h3>Negocio de servicios de belleza</h3><p style="font-size:14px"><b>Hallazgo:</b> Comunica sus servicios, pero no facilita la decisión de compra.</p><ul><li>Diferenciar servicios según necesidad</li><li>Precios y beneficios más claros</li><li>Evidencia visual del trabajo</li><li>Reducir pasos entre consulta y reserva</li></ul><p style="font-size:13px;color:#aaa"><b>Resultado esperado:</b> Proceso más claro, medible y fácil de recorrer.</p></div>
-
-<div class="card"><span class="tag">02 / Marca</span><h3>Tienda de accesorios</h3><p style="font-size:14px"><b>Concepto:</b> Una marca que transforma productos cotidianos en objetos con identidad.</p><p style="font-size:14px;margin-top:8px"><b>Personalidad:</b> Contemporánea. Cercana. Segura. Distintiva.</p><ul><li>Fotografía editorial de producto</li><li>Composiciones minimalistas</li><li>Tipografía de alto contraste</li><li>Paleta neutra + color protagonista</li></ul></div>
-
-<div class="card"><span class="tag">03 / Campaña</span><h3>Comercio especializado</h3><p style="font-size:14px"><b>Concepto:</b> «Encuentra lo que necesitas. Sin complicarte».</p><ul><li><b>A - Descubrimiento:</b> Presentación y utilidad</li><li><b>B - Consideración:</b> Beneficios y diferencias</li><li><b>C - Conversión:</b> Consultar y comprar</li></ul><p style="font-size:13px;color:#aaa">Indicadores: Costo por consulta, % calificadas, conversión, costo de adquisición.</p></div>
-
-<div class="card"><span class="tag">04 / Conversión</span><h3>Negocio de servicios</h3><p style="font-size:14px"><b>Recorrido:</b> Descubre → Visita perfil/sitio → Consulta → Recibe propuesta → Confirma → Seguimiento.</p><ul><li>Mensaje de bienvenida</li><li>Guion de necesidades</li><li>Respuestas a objeciones</li><li>Seguimiento de pendientes</li><li>Confirmación de contratación</li></ul></div>
-
-<div class="card"><span class="tag">05 / Informe</span><h3>Comercio electrónico</h3><p style="font-size:14px"><b>Indicadores:</b> Tráfico, consultas, ventas, conversión, inversión, costo de adquisición.</p><ul><li>Resumen ejecutivo</li><li>Rendimiento del período</li><li>Contenidos y campañas</li><li>Problemas y oportunidades</li><li>Plan de acción siguiente mes</li></ul></div>
-
-</div>
+<section id="metodo" class="metodo">
+<div><h4>01 / ESCUCHAR</h4><p>Entendemos tu negocio, tu cliente y tu meta real.</p></div>
+<div><h4>02 / DECIDIR</h4><p>Elegimos la dirección, el mensaje y la estética. Sin vueltas.</p></div>
+<div><h4>03 / CREAR</h4><p>Diseñamos y producimos todo con intención.</p></div>
+<div><h4>04 / LANZAR</h4><p>Publicamos, medimos y ajustamos para que funcione.</p></div>
 </section>
 
-<section id="metodo">
-<h2>Método MOTÍN</h2>
-<p class="sub">Pendiente: mándame los 5 pasos y los pego acá mismo.</p>
-<div style="background:#1C1C1C;padding:24px;border-radius:20px">1. Diagnóstico → 2. Estrategia → 3. Campaña → 4. Conversión → 5. Dirección</div>
+<section id="contacto" class="contacto">
+<h2>¿HACEMOS<br><span>MOTÍN?</span></h2>
+<p class="sub" style="margin:20px auto">Cuéntanos de tu negocio y te decimos por dónde empezar.</p>
+<a class="btn" style="background:#e30613" href="https://wa.me/56900000000?text=Hola%20MOTÍN,%20quiero%20info%20de%20tus%20servicios">HABLAR POR WHATSAPP</a>
+<p style="margin-top:16px;font-size:13px;color:#666">Instagram: @motin.estudio • Santiago, Chile</p>
 </section>
 
-<section id="contacto">
-<h2>¿Partimos con el diagnóstico?</h2>
-<p class="sub">El primer paso es el más barato y el más claro. $49.990 CLP.</p>
-<a class="btn" href="https://wa.me/56930013641?text=Hola%20MOTÍN,%20quiero%20partir%20con%20el%20diagnóstico">Hablar por WhatsApp - +56 9 3001 3641</a>
-</section>
+<footer><span>MOTÍN © 2026 - Santiago, Chile</span><span>LA INDIFERENCIA NO ES UNA OPCIÓN.</span></footer>
 
-<footer>© 2026 MOTÍN • Estrategia Comercial • Santiago, Chile • contacto@motin.cl</footer>
-<a class="whatsapp" href="https://wa.me/56930013641">WhatsApp 💬</a>
 </body>
 </html>
