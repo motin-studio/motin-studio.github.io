@@ -5,94 +5,157 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MOTÍN - Estudio Creativo Independiente</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, Helvetica, sans-serif}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
 body{background:#f4f1ea;color:#111}
-header{display:flex;justify-content:space-between;align-items:center;padding:20px 5%;background:#f4f1ea;position:sticky;top:0;z-index:10}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 5%;position:sticky;top:0;background:#f4f1ea;z-index:10;border-bottom:1px solid #111}
 .logo{font-size:28px;font-weight:900;letter-spacing:-1px}
-nav{display:flex;gap:22px;align-items:center;font-size:12px;letter-spacing:1px}
+nav{display:flex;gap:16px;align-items:center;font-size:11px;letter-spacing:1px}
 nav a{color:#111;text-decoration:none;font-weight:700}
-.btn-negro{background:#111;color:#fff !important;padding:10px 14px}
-.hero{display:flex;gap:40px;padding:60px 5%;align-items:center;flex-wrap:wrap}
-.hero-text{flex:1;min-width:300px}
+.btn-negro{background:#111;color:#fff!important;padding:10px 14px}
+.hero{display:flex;gap:40px;padding:50px 5% 0;align-items:center;flex-wrap:wrap}
+.hero-text{flex:1.2;min-width:300px}
 .hero-text small{font-size:11px;letter-spacing:2px;color:#666}
-.hero h1{font-size:72px;line-height:0.9;font-weight:900;letter-spacing:-2px;margin:16px 0 10px}
+.hero h1{font-size:70px;line-height:.9;font-weight:900;letter-spacing:-2px;margin:16px 0 10px}
 .hero h1 span{color:#e30613}
 .hero p{max-width:480px;color:#444;line-height:1.6;margin:20px 0}
-.btn{ display:inline-block;background:#111;color:#fff;padding:14px 20px;text-decoration:none;font-weight:800;font-size:13px}
+.btn{display:inline-block;background:#111;color:#fff;padding:14px 20px;text-decoration:none;font-weight:800;font-size:13px}
 .hero-img{flex:1;min-width:300px;position:relative}
-.hero-img img{width:100%;height:520px;object-fit:cover;display:block;filter:grayscale(100%) contrast(1.1)}
-.hero-img div{position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,0.7);color:#fff;font-size:11px;letter-spacing:1px;padding:12px;text-align:center}
+.hero-img img{width:100%;height:520px;object-fit:cover;display:block;filter:grayscale(1) contrast(1.1)}
+.hero-img div{position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,.7);color:#fff;font-size:11px;letter-spacing:1px;padding:12px;text-align:center}
 .barra{background:#111;color:#fff;display:flex;justify-content:space-between;padding:14px 5%;font-size:12px;letter-spacing:1px;font-weight:800}
-section{padding:70px 5%}
-.titulo{font-size:48px;font-weight:900;line-height:0.95}
-.titulo span{color:#e30613}
-.sub{color:#555;margin:14px 0 40px;max-width:600px;line-height:1.6}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-.card{background:#111;color:#fff;padding:28px;border-top:6px solid #e30613}
-.card:nth-child(even){background:#fff;color:#111;border:1px solid #111}
-.card b{font-size:40px;color:#e30613}
-.card h3{font-size:22px;margin:14px 0 10px}
-.card p{font-size:14px;line-height:1.6;color:#ddd}
-.card:nth-child(even) p{color:#444}
-.card a{display:inline-block;margin-top:18px;background:#e30613;color:#fff;padding:10px 14px;text-decoration:none;font-weight:800;font-size:13px}
-.metodo{background:#111;color:#fff;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px}
-.metodo h4{color:#e30613;font-size:28px}
-.metodo p{color:#ccc;line-height:1.6;font-size:14px;margin-top:10px}
-.contacto{text-align:center}
-.contacto h2{font-size:56px;font-weight:900;line-height:0.95}
-.contacto h2 span{color:#e30613}
+.estrategia{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;padding:70px 5%;align-items:start}
+.estrategia h2{font-size:58px;line-height:.95;font-weight:900;letter-spacing:-1px}
+.estrategia p.intro{margin:22px 0;line-height:1.7;color:#333;max-width:520px}
+.pilar{border-top:1px solid #111;padding:18px 0;display:flex;gap:16px}
+.pilar:last-child{border-bottom:1px solid #111}
+.pilar b{color:#e30613;font-size:12px}
+.pilar span{font-weight:700;font-size:16px}
+.estrategia img{width:100%;height:620px;object-fit:cover;filter:grayscale(1) contrast(1.1)}
+.servicios{padding:60px 5%}
+.servicios-head h2{font-size:64px;line-height:.9;font-weight:900;letter-spacing:-1px}
+.servicios-head p{max-width:600px;margin:20px 0 50px;line-height:1.6;color:#444}
+.servicio{display:grid;grid-template-columns:1.3fr .7fr;gap:50px;padding:50px 0;border-top:1px solid #111}
+.servicio:last-child{border-bottom:1px solid #111}
+.servicio small{font-size:12px;letter-spacing:1px;font-weight:700}
+.servicio h3{font-size:48px;line-height:.95;font-weight:900;letter-spacing:-1px;margin:8px 0 24px}
+.label{color:#e30613;font-size:12px;font-weight:800;letter-spacing:1px;margin-top:22px}
+.label+ p{line-height:1.6;color:#333;margin-top:8px;max-width:600px}
+.recibes h4{color:#e30613;font-size:12px;letter-spacing:1px;margin-bottom:14px}
+.recibes ul{list-style:none;line-height:1.7;color:#333}
+.recibes li{margin-bottom:8px}
+.recibes li:before{content:"• ";font-weight:900}
+.precio{color:#e30613;font-size:24px;font-weight:900;margin:24px 0 16px}
+.casos{padding:70px 5%;border-top:1px solid #111}
+.casos h2{font-size:64px;line-height:.9;font-weight:900}
+.casos p.intro{max-width:700px;margin:18px 0 40px;line-height:1.6;color:#444}
+.caso{border-top:1px solid #111;padding:30px 0;display:grid;grid-template-columns:1fr 1.2fr;gap:40px;align-items:start}
+.caso small{color:#e30613;font-weight:800;letter-spacing:1px;font-size:11px}
+.caso h3{font-size:38px;line-height:1;font-weight:900;margin:10px 0}
+.caso p{line-height:1.6;color:#333;max-width:600px}
+.tag{display:inline-block;background:#111;color:#fff;font-size:11px;padding:6px 10px;letter-spacing:1px;margin:10px 0 16px}
+.estado{font-size:12px;color:#666;margin-top:10px;font-style:italic}
+.caso-detalle{margin-top:30px;background:#fff;border:1px solid #111;padding:40px 5%}
+.caso-detalle small{color:#e30613;font-weight:800;letter-spacing:2px;font-size:11px}
+.caso-detalle h2{font-size:52px;line-height:.95;font-weight:900;margin:12px 0 24px;max-width:800px}
+.caso-detalle p{line-height:1.7;color:#333;max-width:750px;margin-bottom:16px}
+.caso-detalle h4{color:#e30613;font-size:12px;letter-spacing:1px;margin:28px 0 12px}
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+.pills span{border:1px solid #111;padding:8px 12px;font-size:12px;font-weight:700}
+.linea-trabajo{border-top:1px solid #111;padding:22px 0;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:start}
+.linea-trabajo:last-child{border-bottom:1px solid #111}
+.linea-trabajo h3{font-size:22px;line-height:1.1}
+.linea-trabajo p{font-size:13px;color:#333;line-height:1.6;margin-top:8px}
+.badge{font-size:11px;font-weight:800;letter-spacing:1px;padding:8px 10px;border:1px solid #111;white-space:nowrap}
+.badge.rojo{background:#e30613;color:#fff;border-color:#e30613}
+.cta-caso{text-align:center;padding:50px 5% 10px}
+.cta-caso small{color:#e30613;font-weight:800;letter-spacing:1px;font-size:11px}
+.cta-caso h2{font-size:48px;line-height:.95;font-weight:900;margin:12px 0 20px}
+.cta-caso p{max-width:600px;margin:0 auto 20px;line-height:1.6;color:#555;font-size:13px}
+.metodo{background:#111;color:#fff;padding:70px 5%;display:grid;grid-template-columns:1.1fr 1.4fr;gap:60px}
+.metodo h2{font-size:62px;line-height:.95;font-weight:900}
+.metodo p.intro{margin-top:20px;line-height:1.7;color:#ddd;max-width:500px}
+.paso{border-top:1px solid #555;padding:18px 0;display:flex;gap:20px}
+.paso:last-child{border-bottom:1px solid #555}
+.paso b{color:#e30613;font-size:28px;font-weight:900}
+.paso h4{font-size:18px;letter-spacing:1px}
+.paso p{color:#bbb;line-height:1.6;margin-top:6px;font-size:14px}
+.entregables{padding:70px 5%}
+.entregables h2{font-size:64px;line-height:.9;font-weight:900}
+.entregables p.intro{max-width:700px;margin:18px 0 40px;line-height:1.6;color:#444}
+.muestra{border-top:1px solid #111;padding:30px 0;display:grid;grid-template-columns:1fr 1fr 1fr;gap:30px}
+.muestra:last-child{border-bottom:1px solid #111}
+.muestra b{color:#e30613;font-size:22px}
+.muestra h3{font-size:26px;line-height:1;margin:8px 0 6px}
+.muestra small{color:#666;font-size:12px}
+.muestra h4{color:#e30613;font-size:11px;letter-spacing:1px;margin:16px 0 8px}
+.muestra p,.muestra li{font-size:13px;line-height:1.6;color:#333}
+.muestra ul,.muestra ol{list-style:none}
+.muestra ol li{margin-bottom:6px}
+.nota{font-size:12px;color:#777;margin-top:14px;line-height:1.6}
+.garantias{background:#e30613;color:#fff;padding:70px 5%}
+.garantias h2{font-size:56px;line-height:.95;font-weight:900}
+.garantias p.intro{max-width:650px;margin:16px 0 40px;line-height:1.6;color:#fff}
+.gar-grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:24px}
+.gar{border-top:2px solid #fff;padding-top:16px}
+.gar h4{font-size:15px;letter-spacing:1px;margin-bottom:10px}
+.gar p{font-size:13px;line-height:1.6;color:#fff}
+.nosotros{padding:70px 5%;border-top:1px solid #111}
+.nosotros small{color:#e30613;font-weight:800;letter-spacing:2px;font-size:12px}
+.nosotros h2{font-size:56px;line-height:.95;font-weight:900;margin:14px 0 22px;max-width:800px}
+.nosotros p{line-height:1.7;color:#333;max-width:700px}
+.contacto-final{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #111}
+.contacto-izq{padding:70px 5%}
+.contacto-izq small{color:#666;letter-spacing:2px;font-size:11px;font-weight:700}
+.contacto-izq h2{font-size:56px;line-height:.95;font-weight:900;margin:14px 0 36px}
+.claridad{margin-bottom:28px}
+.claridad h4{color:#e30613;font-size:12px;letter-spacing:1px;margin-bottom:8px}
+.claridad p{line-height:1.6;color:#333;max-width:520px;font-size:14px}
+.contacto-der{padding:70px 5%;border-left:1px solid #111;background:#fff}
+.contacto-der label{color:#e30613;font-size:11px;letter-spacing:1px;font-weight:800;display:block;margin:18px 0 8px}
+.contacto-der input,.contacto-der select,.contacto-der textarea{width:100%;padding:14px;border:1px solid #111;background:#f4f1ea;font-size:14px}
+.contacto-der button{background:#111;color:#fff;padding:16px 20px;font-weight:800;letter-spacing:1px;border:0;cursor:pointer;margin-top:24px}
+.contacto-der .aviso{font-size:11px;color:#777;margin-top:12px;line-height:1.5}
 footer{background:#111;color:#fff;padding:30px 5%;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12px}
-@media(max-width:700px){.hero h1{font-size:52px}.titulo{font-size:36px}.contacto h2{font-size:38px}nav{display:none}}
+@media(max-width:900px){.hero h1{font-size:52px}.estrategia{grid-template-columns:1fr}.estrategia h2{font-size:42px}.estrategia img{height:380px}.servicio{grid-template-columns:1fr;gap:24px}.servicio h3{font-size:36px}.servicios-head h2{font-size:44px}.metodo{grid-template-columns:1fr}.metodo h2{font-size:44px}.muestra{grid-template-columns:1fr}.entregables h2{font-size:44px}.caso{grid-template-columns:1fr}.gar-grid{grid-template-columns:1fr 1fr}.contacto-final{grid-template-columns:1fr}.contacto-der{border-left:0;border-top:1px solid #111}.nosotros h2,.contacto-izq h2,.casos h2,.garantias h2,.caso-detalle h2,.cta-caso h2{font-size:42px}nav{display:none}.hero-img img{height:380px}}
 </style>
 </head>
 <body>
-
-<header>
-<div class="logo">MOTÍN</div>
-<nav><a href="#">INICIO</a><a href="#servicios">SERVICIOS</a><a href="#metodo">MÉTODO</a><a href="#nosotros">NOSOTROS</a><a href="#contacto">CONTACTO</a><a href="#contacto" class="btn-negro">HABLEMOS</a></nav>
-</header>
-
-<div class="hero">
-<div class="hero-text">
-<small>ESTUDIO CREATIVO INDEPENDIENTE / CHILE</small>
-<h1>NO VINIMOS A<br>PASAR<br><span>DESAPERCIBIDOS.</span></h1>
-<p>Estrategia, creatividad y dirección para negocios que quieren dejar de improvisar y empezar a avanzar.</p>
-<a class="btn" href="#contacto">HABLEMOS DE TU NEGOCIO</a>
-</div>
-<div class="hero-img">
-<img src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?q=80&w=1200&auto=format&fit=crop" alt="MOTÍN">
-<div>LA INDIFERENCIA NO ES UNA OPCIÓN.</div>
-</div>
-</div>
+<header><div class="logo">MOTÍN</div><nav><a href="#">INICIO</a><a href="#servicios">SERVICIOS</a><a href="#casos">CASOS DE ESTUDIO</a><a href="#entregables">MUESTRAS</a><a href="#metodo">MÉTODO</a><a href="#nosotros">NOSOTROS</a><a href="#contacto">CONTACTO</a><a href="#contacto" class="btn-negro">HABLEMOS</a></nav></header>
+<div class="hero"><div class="hero-text"><small>ESTUDIO CREATIVO INDEPENDIENTE / CHILE</small><h1>NO VINIMOS A<br>PASAR<br><span>DESAPERCIBIDOS.</span></h1><p>Estrategia, creatividad y dirección para negocios que quieren dejar de improvisar y empezar a avanzar.</p><a class="btn" href="#contacto">HABLEMOS DE TU NEGOCIO</a></div><div class="hero-img"><img src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?q=80&w=1200&auto=format&fit=crop"><div>LA INDIFERENCIA NO ES UNA OPCIÓN.</div></div></div>
 <div class="barra"><span>ESTRATEGIA • CREATIVIDAD • DIRECCIÓN</span><span>SIN RUIDO. CON INTENCIÓN.</span></div>
+<div class="estrategia"><div><h2>NO ES MÁS<br>CONTENIDO. ES MEJOR<br>ESTRATEGIA.</h2><p class="intro">Hay negocios que publican todos los días y siguen sin vender. Otros invierten en publicidad sin entender qué está fallando. Y muchos tienen un buen producto, pero no consiguen comunicar por qué alguien debería elegirlos.<br><br>En MOTÍN creemos que crecer no consiste en hacer más por hacer más. Consiste en entender el problema, tomar mejores decisiones y ejecutar con intención.</p><div class="pilar"><b>01</b><span>Estrategia antes que improvisación.</span></div><div class="pilar"><b>02</b><span>Creatividad con intención.</span></div><div class="pilar"><b>03</b><span>Resultados con dirección.</span></div></div><img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop"></div>
 
-<section id="servicios">
-<h2 class="titulo">LOS 5 SERVICIOS<br><span>DE MOTÍN.</span></h2>
-<p class="sub">Sin humo. Sin plantillas. Todo con intención y pensado para que tu marca se vea seria, fuerte y venda.</p>
-<div class="grid">
-<div class="card"><b>01</b><h3>Estrategia de Marca</h3><p>Definimos a quién le hablas, qué vendes y por qué te van a elegir a ti y no a otro.</p><a href="#contacto">QUIERO ESTE →</a></div>
-<div class="card"><b>02</b><h3>Branding / Identidad</h3><p>Logo, colores, tipografía y sistema visual completo. Que se vea profesional desde el día 1.</p><a href="#contacto">QUIERO ESTE →</a></div>
-<div class="card"><b>03</b><h3>Contenido que Vende</h3><p>Ideas, guiones, fotos y videos pensados para Instagram, TikTok y WhatsApp. No contenido por llenar.</p><a href="#contacto">QUIERO ESTE →</a></div>
-<div class="card"><b>04</b><h3>Dirección Creativa</h3><p>Dirigimos tu sesión, tu campaña y tu imagen para que todo se vea coherente y con carácter.</p><a href="#contacto">QUIERO ESTE →</a></div>
-<div class="card"><b>05</b><h3>Gestión de Redes</h3><p>Plan mensual, calendario, diseño y publicación. Tú te dedicas a vender, nosotras a que se vea increíble.</p><a href="#contacto">QUIERO ESTE →</a></div>
+<div class="servicios" id="servicios"><div class="servicios-head"><h2>NO VENDEMOS PUBLICACIONES.<br>RESOLVEMOS PROBLEMAS.</h2><p>Trabajamos en estrategia comercial y digital. Detectamos qué frena tu negocio y construimos el camino para avanzar.</p></div>
+<div class="servicio"><div><small>01 / DIAGNÓSTICO COMERCIAL</small><h3>RADIOGRAFÍA DE VENTAS</h3><div class="label">QUÉ PROBLEMA RESUELVE:</div><p>No sabes qué está frenando tus ventas ni qué mejorar primero.</p><div class="label">QUÉ NECESITAMOS:</div><p>Enlaces a tus canales digitales, descripción de la oferta, público al que te diriges y principales dificultades comerciales.</p><div class="label">PLAZO ESTIMADO:</div><p>Hasta 48 horas hábiles después de recibir la información necesaria.</p></div><div class="recibes"><h4>QUÉ RECIBES:</h4><ul><li>Diagnóstico de tu presencia digital, oferta y recorrido del cliente</li><li>Tres prioridades con recomendaciones personalizadas</li><li>Matriz de hallazgos para decidir qué mejorar primero</li></ul><div class="precio">desde $49.990 CLP</div><a class="btn" href="https://wa.me/56930013641?text=Hola%20MOTÍN,%20quiero%20la%20Radiografía%20de%20Ventas">CONSULTAR EN WHATSAPP</a></div></div>
+<div class="servicio"><div><small>02 / ESTRATEGIA COMERCIAL</small><h3>PLAN ESTRATÉGICO COMERCIAL</h3><div class="label">QUÉ PROBLEMA RESUELVE:</div><p>Tu negocio comunica y capta clientes sin una propuesta diferenciada ni un plan claro.</p><div class="label">QUÉ NECESITAMOS:</div><p>Descripción del negocio y su oferta, objetivos, público actual, referencias de mercado y acciones comerciales realizadas.</p><div class="label">PLAZO ESTIMADO:</div><p>7 días hábiles.</p></div><div class="recibes"><h4>QUÉ RECIBES:</h4><ul><li>Análisis del negocio y mercado</li><li>Definición del público objetivo</li><li>Propuesta de valor y diferenciación</li><li>Estrategia de captación y conversión</li><li>Plan de acción de 30 días</li><li>Indicadores para medir avances</li></ul><div class="precio">desde $119.990 CLP</div><a class="btn" href="https://wa.me/56930013641?text=Hola%20MOTÍN,%20quiero%20el%20Plan%20Estratégico">CONSULTAR EN WHATSAPP</a></div></div>
+<div class="servicio"><div><small>03 / CAMPAÑAS DE CAPTACIÓN</small><h3>CAMPAÑAS DE CAPTACIÓN</h3><div class="label">QUÉ PROBLEMA RESUELVE:</div><p>Necesitas llegar a personas relevantes con una campaña y un mensaje bien definidos.</p><div class="label">QUÉ NECESITAMOS:</div><p>Objetivo de campaña, oferta, público, canales disponibles, recursos de marca y presupuesto publicitario previsto.</p><div class="label">PLAZO ESTIMADO:</div><p>5 a 7 días hábiles. La inversión publicitaria se paga por separado y no está incluida.</p></div><div class="recibes"><h4>QUÉ RECIBES:</h4><ul><li>Planificación estratégica</li><li>Definición de audiencia</li><li>Concepto creativo</li><li>Textos publicitarios</li><li>Piezas creativas</li><li>Estructura de campaña</li><li>Análisis y recomendaciones</li></ul><div class="precio">desde $149.990 CLP</div><a class="btn" href="https://wa.me/56930013641?text=Hola%20MOTÍN,%20quiero%20Campañas%20de%20Captación">CONSULTAR EN WHATSAPP</a></div></div>
+<div class="servicio"><div><small>04 / SISTEMAS DE CONVERSIÓN</small><h3>SISTEMA DE CONVERSIÓN</h3><div class="label">QUÉ PROBLEMA RESUELVE:</div><p>Recibes consultas, pero el recorrido desde el interés hasta la compra tiene fricciones.</p><div class="label">QUÉ NECESITAMOS:</div><p>Cómo recibes y atiendes consultas, oferta vigente, etapas de venta y ejemplos anonimizados de atención y seguimiento.</p><div class="label">PLAZO ESTIMADO:</div><p>7 a 10 días hábiles.</p></div><div class="recibes"><h4>QUÉ RECIBES:</h4><ul><li>Revisión del proceso comercial</li><li>Optimización de la presentación de la oferta</li><li>Análisis del recorrido del cliente</li><li>Guiones de atención y seguimiento</li><li>Recomendaciones para mejorar conversiones</li></ul><div class="precio">desde $199.990 CLP</div><a class="btn" href="https://wa.me/56930013641?text=Hola%20MOTÍN,%20quiero%20el%20Sistema%20de%20Conversión">CONSULTAR EN WHATSAPP</a></div></div>
+<div class="servicio"><div><small>05 / DIRECCIÓN ESTRATÉGICA</small><h3>DIRECCIÓN ESTRATÉGICA MENSUAL</h3><div class="label">QUÉ PROBLEMA RESUELVE:</div><p>Necesitas continuidad para revisar decisiones, indicadores y prioridades del negocio.</p><div class="label">QUÉ NECESITAMOS:</div><p>Objetivos del mes, indicadores disponibles, acciones ejecutadas y dificultades o decisiones que necesitas revisar.</p><div class="label">PLAZO ESTIMADO:</div><p>Ciclo mensual. El calendario de entregas se define según el alcance acordado.</p></div><div class="recibes"><h4>QUÉ RECIBES:</h4><ul><li>Reunión estratégica mensual</li><li>Seguimiento de indicadores</li><li>Análisis de resultados</li><li>Planificación mensual</li><li>Recomendaciones de optimización</li><li>Informe de seguimiento</li></ul><div class="precio">desde $249.990 CLP / mes</div><a class="btn" href="https://wa.me/56930013641?text=Hola%20MOTÍN,%20quiero%20la%20Dirección%20Mensual">CONSULTAR EN WHATSAPP</a></div></div>
 </div>
-</section>
 
-<section id="metodo" class="metodo">
-<div><h4>01 / ESCUCHAR</h4><p>Entendemos tu negocio, tu cliente y tu meta real.</p></div>
-<div><h4>02 / DECIDIR</h4><p>Elegimos la dirección, el mensaje y la estética. Sin vueltas.</p></div>
-<div><h4>03 / CREAR</h4><p>Diseñamos y producimos todo con intención.</p></div>
-<div><h4>04 / LANZAR</h4><p>Publicamos, medimos y ajustamos para que funcione.</p></div>
-</section>
+<div class="casos" id="casos"><h2>CASOS DE ESTUDIO</h2><p class="intro">Trabajo real documentado para mostrar cómo analizamos, diagnosticamos y desarrollamos soluciones comerciales.</p>
+<div class="caso"><div><small>COMERCIO ELECTRÓNICO / MASCOTAS</small><h3>MAISON MIMI PARIS</h3><span class="tag">DIRECCIÓN ESTRATÉGICA MENSUAL</span><p>Dirección estratégica mensual para una tienda de productos para mascotas en el mercado chileno.</p><p class="estado">Caso en desarrollo.</p><br><a class="btn" href="#caso-maison">VER CASO DE ESTUDIO</a></div><div><h4 style="color:#e30613;font-size:11px;letter-spacing:1px">QUÉ ESTAMOS TRABAJANDO</h4><ul style="list-style:none;line-height:1.7;margin-top:10px"><li>• Diagnóstico comercial inicial</li><li>• Definición de oferta y prioridades</li><li>• Planificación mensual y seguimiento de indicadores</li><li>• Optimización de recorrido de compra</li></ul><p style="margin-top:16px;font-size:13px;color:#666">Este caso se irá actualizando con avances reales, sin resultados inventados.</p></div></div>
 
-<section id="contacto" class="contacto">
-<h2>¿HACEMOS<br><span>MOTÍN?</span></h2>
-<p class="sub" style="margin:20px auto">Cuéntanos de tu negocio y te decimos por dónde empezar.</p>
-<a class="btn" style="background:#e30613" href="https://wa.me/56900000000?text=Hola%20MOTÍN,%20quiero%20info%20de%20tus%20servicios">HABLAR POR WHATSAPP</a>
-<p style="margin-top:16px;font-size:13px;color:#666">Instagram: @motin.estudio • Santiago, Chile</p>
-</section>
+<div class="caso-detalle" id="caso-maison"><small>CONTEXTO DEL NEGOCIO</small><h2>UNA TIENDA QUE NECESITA ALGO MÁS QUE PRODUCTOS.</h2><p>Maison Mimi Paris es una tienda de comercio electrónico enfocada en el mercado chileno, con productos para mascotas y una propuesta dirigida a sus personas cuidadoras.</p><p>El proyecto nace con el desafío de construir una tienda digital que no dependa únicamente de publicar productos: necesita una oferta comercial clara, una estructura de venta, medios de pago, logística, adquisición de clientes y un proceso de conversión.</p><p>La tienda opera sobre Shopify y utiliza Mercado Pago. También contempla WhatsApp como canal de venta y contacto.</p><h4>STACK / CANALES</h4><div class="pills"><span>SHOPIFY</span><span>MERCADO PAGO</span><span>WHATSAPP</span><span>COMERCIO ELECTRÓNICO - CHILE</span></div>
+<h4>LÍNEAS DE TRABAJO</h4>
+<div class="linea-trabajo"><div><h3>PLAN DE CAPTACIÓN Y CAMPAÑAS</h3><p>Estrategia de contenidos y estructura de campañas de Meta Ads con presupuesto controlado.</p></div><span class="badge">PROPUESTO</span></div>
+<div class="linea-trabajo"><div><h3>MAPA DEL RECORRIDO DE CONVERSIÓN</h3><p>Análisis del recorrido del comprador desde el descubrimiento hasta la compra y el seguimiento.</p></div><span class="badge rojo">EN DESARROLLO</span></div>
+<div class="linea-trabajo"><div><h3>PANEL DE INDICADORES COMERCIALES</h3><p>Definición de métricas clave y estructura de seguimiento para evaluar el desempeño comercial.</p></div><span class="badge">PROPUESTO</span></div>
+<h4>SITUACIÓN INICIAL</h4><p>Tienda en construcción. Se requiere definir la base comercial antes de escalar: oferta, estructura de venta y recorrido de compra.</p><p style="font-size:12px;color:#777">Caso en desarrollo. Esta sección se actualizará con diagnóstico, decisiones y avances reales del proyecto.</p>
+</div>
 
-<footer><span>MOTÍN © 2026 - Santiago, Chile</span><span>LA INDIFERENCIA NO ES UNA OPCIÓN.</span></footer>
+<div class="cta-caso"><small>¿TU NEGOCIO NECESITA DIRECCIÓN?</small><h2>CONVERSEMOS SOBRE LO QUE<br>QUIERES RESOLVER.</h2><a class="btn" href="https://wa.me/56930013641?text=Hola%20MOTÍN,%20quiero%20hablar%20de%20mi%20negocio">HABLEMOS DE TU NEGOCIO</a><p>Este caso documenta el trabajo de MOTÍN STUDIO con Maison Mimi Paris. No se publican cifras de ventas, métricas ni mejoras que no estén verificadas.</p></div>
+</div>
 
-</body>
-</html>
+<div class="metodo" id="metodo"><div><h2>MÉTODO MOTÍN.<br>DE LA LECTURA<br>A LA ACCIÓN.</h2><p class="intro">Un proceso de cinco etapas para entender qué necesita el negocio, definir una dirección y llevarla a acciones concretas.</p></div><div><div class="paso"><b>01</b><div><h4>ESCUCHAMOS</h4><p>Conocemos el negocio, sus objetivos y sus dificultades.</p></div></div><div class="paso"><b>02</b><div><h4>DIAGNOSTICAMOS</h4><p>Identificamos los obstáculos y oportunidades.</p></div></div><div class="paso"><b>03</b><div><h4>ESTRATEGIZAMOS</h4><p>Construimos una propuesta de trabajo personalizada.</p></div></div><div class="paso"><b>04</b><div><h4>EJECUTAMOS</h4><p>Desarrollamos las acciones acordadas.</p></div></div><div class="paso"><b>05</b><div><h4>MEDIMOS</h4><p>Evaluamos avances y proponemos mejoras.</p></div></div></div></div>
+
+<div class="entregables" id="entregables"><h2>MUESTRAS DE<br>ENTREGABLES</h2><p class="intro">Estructuras y enfoques que pueden formar parte del trabajo: diagnóstico, marca, campañas, conversión e informes. Son demostraciones, no casos de clientes.</p>
+<div class="muestra"><div><b>01</b><h3>DIAGNÓSTICO COMERCIAL</h3><small>Negocio de servicios de belleza. Auditoría comercial inicial.</small><h4>HALLAZGO PRINCIPAL</h4><p>El negocio comunica sus servicios, pero no facilita suficientemente la decisión de compra.</p></div><div><h4>OPORTUNIDADES DETECTADAS</h4><ul><li>Diferenciar los servicios según necesidad del cliente.</li><li>Presentar precios y beneficios con mayor claridad.</li><li>Incorporar evidencia visual del trabajo.</li><li>Reducir pasos entre consulta y reserva.</li></ul></div><div><h4>PRIORIDADES ESTRATÉGICAS</h4><p>1. Reorganizar la oferta comercial.<br>2. Mejorar la presentación de servicios.<br>3. Crear contenido orientado a resolver dudas.<br>4. Implementar seguimiento de consultas.</p><h4>RESULTADO ESPERADO</h4><p>Un proceso comercial más claro, medible y fácil de recorrer para potenciales clientes.</p></div></div>
+<div class="muestra"><div><b>02</b><h3>DIRECCIÓN DE MARCA</h3><small>Tienda independiente de accesorios. Propuesta de posicionamiento.</small><h4>CONCEPTO</h4><p>Una marca que transforma productos cotidianos en objetos con identidad.</p><h4>PERSONALIDAD</h4><p>Contemporánea. Cercana. Segura. Distintiva.</p></div><div><h4>DIRECCIÓN CREATIVA</h4><ul><li>Fotografía editorial minimalista de producto.</li><li>Composiciones de alto contraste.</li><li>Tipografía con un alto color protagonista.</li><li>Paleta neutra con un color protagonista.</li></ul></div><div><h4>APLICACIONES PROPUESTAS</h4><ul><li>Portada de tienda online.</li><li>Plantillas para redes sociales.</li><li>Anuncios comerciales.</li><li>Presentación de colecciones.</li></ul></div></div>
+<div class="muestra"><div><b>03</b><h3>CAMPAÑA PUBLICITARIA</h3><small>Campaña de captación de clientes. Concepto y estructura de campaña.</small><h4>OBJETIVO</h4><p>Generar consultas comerciales calificadas.</p><h4>CONCEPTO CREATIVO</h4><p>“Encuentra lo que necesitas. Sin complicarte.”</p></div><div><h4>ANUNCIOS</h4><p><b>ANUNCIO A - DESCUBRIMIENTO:</b> Presentación del producto y su utilidad.<br><br><b>ANUNCIO B - CONSIDERACIÓN:</b> Beneficios, características y diferencias.<br><br><b>ANUNCIO C - CONVERSIÓN:</b> Llamado a consulta, disponibilidad y comprar.</p></div><div><h4>INDICADORES</h4><ul><li>Costo por consulta.</li><li>Porcentaje de consultas calificadas.</li><li>Conversión a compra.</li><li>Costo de adquisición.</li></ul></div></div>
+<div class="muestra"><div><b>04</b><h3>SISTEMA DE CONVERSIÓN</h3><small>Negocio de servicios. Flujo de atención comercial.</small><h4>RECORRIDO</h4><ol><li>1. El potencial cliente descubre el negocio.</li><li>2. Visita el perfil o sitio web.</li><li>3. Consulta por un servicio.</li><li>4. Recibe información y propuesta.</li><li>5. Confirma la contratación.</li><li>6. Recibe seguimiento posterior.</li></ol></div><div><h4>HERRAMIENTAS COMERCIALES</h4><ul><li>Mensaje de bienvenida.</li><li>Guion de identificación de necesidades.</li><li>Respuestas a objeciones.</li><li>Seguimiento de consultas pendientes.</li><li>Confirmación de contratación.</li></ul></div><div><h4>RESULTADO ESPERADO</h4><p>Un proceso comercial más claro, medible y fácil de recorrer para potenciales clientes.</p></div></div>
+<div class="muestra"><div><b>05</b><h3>INFORME ESTRATÉGICO MENSUAL</h3><small>Comercio electrónico. Reporte de gestión.</small><h4>INDICADORES REVISADOS</h4><ul><li>Tráfico al sitio.</li><li>Consultas recibidas.</li><li>Ventas registradas.</li><li>Conversión.</li><li>Inversión publicitaria.</li><li>Costo de adquisición.</li></ul></div><div><h4>ESTRUCTURA DEL INFORME</h4><ol><li>1. Resumen ejecutivo.</li><li>2. Rendimiento del periodo.</li><li>3. Contenidos y campañas.</li><li>4. Problemas detectados.</li><li>5. Oportunidades.</li><li>6. Plan de acción del siguiente mes.</li></ol></div><div><h4>NOTA</h4><p>Los indicadores y resultados deben completarse con datos reales. Esta muestra no representa resultados obtenidos por MOTÍN.</p></div></div>
+<p class="nota">Nota: los indicadores y resultados deben completarse con datos reales. Esta muestra no representa resultados obtenidos por MOTÍN.</p>
+</div>
+
+<div class="garantias"><h2>GARANTÍAS MOTÍN.<br>PARA QUE COMPRES TRANQUILA.</h2><p class="intro">No prometemos ventas mágicas. Garantizamos cómo trabajamos, qué entregamos y cuándo lo entregamos. Eso es lo que te hace comprar con confianza.</p><div class="gar-grid"><div class="gar"><h4>01 / GARANTÍA DE ENTREGA</h4><p>Si no entregamos en el plazo acordado, te devolvemos el 20% del servicio. Sin letra chica.</p></div><div class="gar"><h4>02 / GARANTÍA DE CLARIDAD</h4><p>Si no te queda claro el entregable, te lo explicamos en una llamada de 30 min hasta que puedas aplicarlo. Sin costo extra.</p></div><div class="gar"><h4>03 / GARANTÍA DE REVISIÓN</h4><p>1 ronda de ajustes incluida en todos los servicios.
