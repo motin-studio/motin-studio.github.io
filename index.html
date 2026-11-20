@@ -65,6 +65,18 @@ nav a{color:var(--negro);text-decoration:none;font-weight:600}
 .recibes li:before{content:"• ";font-weight:900}
 .precio{color:var(--rojo);font-size:26px;margin:24px 0 16px}
 
+/* servicios plegables */
+.servicio-d{border-top:1px solid var(--negro)}
+.servicio-d:last-of-type{border-bottom:1px solid var(--negro)}
+.servicio-d summary{cursor:pointer;list-style:none;display:grid;grid-template-columns:1fr auto auto;gap:28px;align-items:center;padding:30px 0}
+.servicio-d summary::-webkit-details-marker{display:none}
+.servicio-d summary small{display:block;font-size:10px;letter-spacing:2px;font-weight:600;text-transform:uppercase}
+.servicio-d summary h3{font-size:40px;line-height:1.05;letter-spacing:1px;margin:8px 0 0}
+.servicio-d summary .precio{margin:0;font-size:24px;white-space:nowrap}
+.servicio-d summary:after{content:"+";font-size:30px;line-height:1;font-weight:400}
+.servicio-d[open] summary:after{content:"–"}
+.servicio-d .servicio{border-top:0!important;border-bottom:0!important;padding:6px 0 50px}
+
 /* casos de estudio */
 .casos{padding:70px 5%;border-top:1px solid #d6d3cc}
 .casos h2{font-size:64px;line-height:1;letter-spacing:1px}
@@ -152,7 +164,7 @@ footer a{color:#fff;text-decoration:none}
 .hero{grid-template-columns:1fr;gap:34px}.hero h1{font-size:56px}.hero-img img{height:400px}
 .estrategia{grid-template-columns:1fr}.estrategia h2{font-size:42px}
 .pilares{grid-template-columns:1fr}.como{grid-template-columns:1fr}
-.servicio{grid-template-columns:1fr;gap:24px}.servicio h3{font-size:36px}
+.servicio{grid-template-columns:1fr;gap:24px}.servicio-d summary{grid-template-columns:1fr auto;gap:12px 16px;padding:24px 0}.servicio-d summary .s-tit{grid-column:1/-1}.servicio-d summary h3{font-size:32px}.servicio-d summary .precio{font-size:20px}.servicio-d .servicio{padding:0 0 36px}
 .servicios-head h2,.casos h2,.entregables h2,.nosotros h2,.contacto-izq h2{font-size:42px}
 .caso-card{padding:26px}.caso-card h3{font-size:32px}
 .metodo{grid-template-columns:1fr}.metodo h2{font-size:42px}
@@ -218,10 +230,10 @@ nav a:not(.btn-negro){display:none}
 <p>Trabajamos en estrategia comercial y digital. Detectamos qué frena tu negocio y construimos el camino para avanzar.</p>
 </div>
 
+<details class="servicio-d" open>
+<summary><div class="s-tit"><small>01 / Diagnóstico comercial</small><h3>Radiografía de ventas</h3></div><span class="precio">desde $49.990 CLP</span></summary>
 <div class="servicio">
 <div>
-<small>01 / Diagnóstico comercial</small>
-<h3>Radiografía de ventas</h3>
 <div class="label">Qué problema resuelve:</div>
 <p>No sabes qué está frenando tus ventas ni qué mejorar primero.</p>
 <div class="label">Qué necesitamos:</div>
@@ -236,15 +248,15 @@ nav a:not(.btn-negro){display:none}
 <li>Tres prioridades con recomendaciones personalizadas</li>
 <li>Matriz de hallazgos para decidir qué mejorar primero</li>
 </ul>
-<div class="precio">desde $49.990 CLP</div>
 <a class="btn" href="https://wa.me/56930013641?text=Hola%20MOT%C3%8DN%2C%20quiero%20la%20Radiograf%C3%ADa%20de%20Ventas">CONSULTAR EN WHATSAPP</a>
 </div>
 </div>
+</details>
 
+<details class="servicio-d">
+<summary><div class="s-tit"><small>02 / Estrategia comercial</small><h3>Plan estratégico comercial</h3></div><span class="precio">desde $119.990 CLP</span></summary>
 <div class="servicio">
 <div>
-<small>02 / Estrategia comercial</small>
-<h3>Plan estratégico comercial</h3>
 <div class="label">Qué problema resuelve:</div>
 <p>Tu negocio comunica y capta clientes sin una propuesta diferenciada ni un plan claro.</p>
 <div class="label">Qué necesitamos:</div>
@@ -262,15 +274,15 @@ nav a:not(.btn-negro){display:none}
 <li>Plan de acción de 30 días</li>
 <li>Indicadores para medir avances</li>
 </ul>
-<div class="precio">desde $119.990 CLP</div>
 <a class="btn" href="https://wa.me/56930013641?text=Hola%20MOT%C3%8DN%2C%20quiero%20el%20Plan%20Estrat%C3%A9gico">CONSULTAR EN WHATSAPP</a>
 </div>
 </div>
+</details>
 
+<details class="servicio-d">
+<summary><div class="s-tit"><small>03 / Campañas de captación</small><h3>Campañas de captación</h3></div><span class="precio">desde $149.990 CLP</span></summary>
 <div class="servicio">
 <div>
-<small>03 / Campañas de captación</small>
-<h3>Campañas de captación</h3>
 <div class="label">Qué problema resuelve:</div>
 <p>Necesitas llegar a personas relevantes con una campaña y un mensaje bien definidos.</p>
 <div class="label">Qué necesitamos:</div>
@@ -289,15 +301,15 @@ nav a:not(.btn-negro){display:none}
 <li>Estructura de campaña</li>
 <li>Análisis y recomendaciones</li>
 </ul>
-<div class="precio">desde $149.990 CLP</div>
 <a class="btn" href="https://wa.me/56930013641?text=Hola%20MOT%C3%8DN%2C%20quiero%20Campa%C3%B1as%20de%20Captaci%C3%B3n">CONSULTAR EN WHATSAPP</a>
 </div>
 </div>
+</details>
 
+<details class="servicio-d">
+<summary><div class="s-tit"><small>04 / Sistemas de conversión</small><h3>Sistema de conversión</h3></div><span class="precio">desde $199.990 CLP</span></summary>
 <div class="servicio">
 <div>
-<small>04 / Sistemas de conversión</small>
-<h3>Sistema de conversión</h3>
 <div class="label">Qué problema resuelve:</div>
 <p>Recibes consultas, pero el recorrido desde el interés hasta la compra tiene fricciones.</p>
 <div class="label">Qué necesitamos:</div>
@@ -314,15 +326,15 @@ nav a:not(.btn-negro){display:none}
 <li>Guiones de atención y seguimiento</li>
 <li>Recomendaciones para mejorar conversiones</li>
 </ul>
-<div class="precio">desde $199.990 CLP</div>
 <a class="btn" href="https://wa.me/56930013641?text=Hola%20MOT%C3%8DN%2C%20quiero%20el%20Sistema%20de%20Conversi%C3%B3n">CONSULTAR EN WHATSAPP</a>
 </div>
 </div>
+</details>
 
+<details class="servicio-d">
+<summary><div class="s-tit"><small>05 / Dirección estratégica</small><h3>Dirección estratégica mensual</h3></div><span class="precio">desde $249.990 CLP / mes</span></summary>
 <div class="servicio">
 <div>
-<small>05 / Dirección estratégica</small>
-<h3>Dirección estratégica mensual</h3>
 <div class="label">Qué problema resuelve:</div>
 <p>Necesitas continuidad para revisar decisiones, indicadores y prioridades del negocio.</p>
 <div class="label">Qué necesitamos:</div>
@@ -340,10 +352,10 @@ nav a:not(.btn-negro){display:none}
 <li>Recomendaciones de optimización</li>
 <li>Informe de seguimiento</li>
 </ul>
-<div class="precio">desde $249.990 CLP / mes</div>
 <a class="btn" href="https://wa.me/56930013641?text=Hola%20MOT%C3%8DN%2C%20quiero%20la%20Direcci%C3%B3n%20Mensual">CONSULTAR EN WHATSAPP</a>
 </div>
 </div>
+</details>
 </section>
 
 <section class="casos" id="casos">
