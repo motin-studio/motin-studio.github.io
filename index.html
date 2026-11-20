@@ -5,118 +5,154 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MOTÍN - Estudio Creativo Independiente</title>
 <meta name="description" content="MOTÍN es un estudio creativo independiente en Chile. Estrategia, creatividad y dirección para negocios que quieren dejar de improvisar y empezar a avanzar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
-html{scroll-behavior:smooth}
+:root{--rojo:#e8392e;--negro:#111;--claro:#eeece7;--beige:#e6e2db}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Outfit',Arial,Helvetica,sans-serif}
+html{font-synthesis:none;scroll-behavior:smooth}
 [id]{scroll-margin-top:80px}
-body{background:#f4f1ea;color:#111}
-header{display:flex;justify-content:space-between;align-items:center;padding:20px 5%;position:sticky;top:0;background:#f4f1ea;z-index:10;border-bottom:1px solid #111}
-.logo{font-size:28px;font-weight:900;letter-spacing:-1px}
-nav{display:flex;gap:16px;align-items:center;font-size:11px;letter-spacing:1px}
-nav a{color:#111;text-decoration:none;font-weight:700}
-.btn-negro{background:#111;color:#fff!important;padding:10px 14px}
-.hero{display:flex;gap:40px;padding:50px 5% 0;align-items:center;flex-wrap:wrap}
-.hero-text{flex:1.2;min-width:300px}
-.hero-text small{font-size:11px;letter-spacing:2px;color:#666;text-transform:uppercase}
-.hero h1{font-size:70px;line-height:.9;font-weight:900;letter-spacing:-2px;margin:16px 0 10px;text-transform:uppercase}
-.hero h1 span{color:#e30613}
-.hero p{max-width:480px;color:#444;line-height:1.6;margin:20px 0}
-.btn{display:inline-block;background:#111;color:#fff;padding:14px 20px;text-decoration:none;font-weight:800;font-size:13px}
-.hero-img{flex:1;min-width:300px;position:relative}
-.hero-img img{width:100%;height:520px;object-fit:cover;display:block;filter:grayscale(1) contrast(1.1)}
-.hero-img div{position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,.7);color:#fff;font-size:11px;letter-spacing:1px;padding:12px;text-align:center}
-.barra{background:#111;color:#fff;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:14px 5%;font-size:12px;letter-spacing:1px;font-weight:800}
-.estrategia{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;padding:70px 5%;align-items:start}
-.estrategia h2{font-size:58px;line-height:.95;font-weight:900;letter-spacing:-1px;text-transform:uppercase}
-.estrategia p.intro{margin:22px 0;line-height:1.7;color:#333;max-width:520px}
-.pilar{border-top:1px solid #111;padding:18px 0;display:flex;gap:16px}
-.pilar:last-child{border-bottom:1px solid #111}
-.pilar b{color:#e30613;font-size:12px}
-.pilar span{font-weight:700;font-size:16px}
-.estrategia img{width:100%;height:620px;object-fit:cover;filter:grayscale(1) contrast(1.1)}
-.servicios{padding:60px 5%}
-.servicios-head h2{font-size:64px;line-height:.9;font-weight:900;letter-spacing:-1px;text-transform:uppercase}
-.servicios-head p{max-width:600px;margin:20px 0 50px;line-height:1.6;color:#444}
-.servicio{display:grid;grid-template-columns:1.3fr .7fr;gap:50px;padding:50px 0;border-top:1px solid #111}
-.servicio:last-child{border-bottom:1px solid #111}
-.servicio small{font-size:12px;letter-spacing:1px;font-weight:700;text-transform:uppercase}
-.servicio h3{font-size:48px;line-height:.95;font-weight:900;letter-spacing:-1px;margin:8px 0 24px;text-transform:uppercase}
-.label{color:#e30613;font-size:12px;font-weight:800;letter-spacing:1px;margin-top:22px;text-transform:uppercase}
-.label+p{line-height:1.6;color:#333;margin-top:8px;max-width:600px}
-.recibes h4{color:#e30613;font-size:12px;letter-spacing:1px;margin-bottom:14px;text-transform:uppercase}
-.recibes ul{list-style:none;line-height:1.7;color:#333}
+body{background:var(--claro);color:var(--negro)}
+h1,h2,h3,.logo,.precio,.paso b,.pilar b,.muestra b{font-family:'Anton',Impact,'Arial Narrow',sans-serif;font-weight:400;text-transform:uppercase}
+
+/* menú */
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 5%;position:sticky;top:0;background:var(--claro);z-index:10;border-bottom:1px solid #d6d3cc}
+.logo{font-size:26px;letter-spacing:1px;color:var(--negro);text-decoration:none}
+nav{display:flex;gap:22px;align-items:center;font-size:11px;letter-spacing:1px}
+nav a{color:var(--negro);text-decoration:none;font-weight:600}
+.btn-negro{background:var(--negro);color:#fff!important;padding:12px 18px;font-weight:700}
+.btn{display:inline-block;background:var(--negro);color:#fff;padding:14px 20px;text-decoration:none;font-weight:700;font-size:12px;letter-spacing:1px}
+.kicker{display:block;color:#666;font-weight:500;letter-spacing:2px;font-size:10px;text-transform:uppercase}
+.kicker.r{color:var(--rojo);font-weight:700}
+:focus-visible{outline:3px solid var(--rojo);outline-offset:2px}
+
+/* portada */
+.hero{display:grid;grid-template-columns:1.1fr .8fr;gap:60px;padding:50px 5% 70px;align-items:center}
+.hero small{display:block;font-size:10px;letter-spacing:2px;color:#444;text-transform:uppercase;font-weight:500}
+.hero h1{font-size:100px;line-height:1;letter-spacing:1px;margin:22px 0 22px}
+.hero h1 span{color:var(--rojo);display:block}
+.hero p{max-width:440px;color:#333;line-height:1.7;margin:0 0 26px;font-size:15px}
+.hero-img{position:relative;background:var(--negro);min-height:420px}
+.hero-img img{width:100%;height:520px;object-fit:cover;object-position:top;display:block;filter:grayscale(1) contrast(1.1)}
+.hero-img div{position:absolute;bottom:0;left:0;background:rgba(0,0,0,.78);color:#fff;font-size:10px;letter-spacing:1.5px;padding:12px 14px;font-weight:600}
+.barra{background:var(--negro);color:#fff;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:18px 5%;font-size:11px;letter-spacing:1.5px;font-weight:700}
+
+/* estrategia */
+.estrategia{display:grid;grid-template-columns:1fr 1fr;gap:60px;padding:80px 5% 60px;align-items:start}
+.estrategia h2{font-size:64px;line-height:1;letter-spacing:1px;text-transform:uppercase}
+.estrategia p.intro{margin:22px 0 0;line-height:1.7;color:#444;max-width:520px;font-size:13px}
+.estrategia .img{background:#cfccc5;min-height:300px}
+.estrategia img{width:100%;height:330px;object-fit:cover;display:block;filter:grayscale(1) contrast(1.1)}
+.pilares{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding:0 5% 80px}
+.pilar{border-top:1px solid var(--negro);padding-top:14px}
+.pilar b{display:block;color:var(--rojo);font-size:12px;font-family:'Outfit',Arial,sans-serif;font-weight:600;margin-bottom:6px}
+.pilar span{font-weight:700;font-size:15px}
+
+/* servicios */
+.servicios{padding:70px 5%;background:var(--claro)}
+.servicios-head h2{font-size:64px;line-height:1;letter-spacing:1px}
+.servicios-head p{max-width:600px;margin:20px 0 50px;line-height:1.7;color:#555;font-size:14px}
+.servicio{display:grid;grid-template-columns:1.3fr .7fr;gap:50px;padding:50px 0;border-top:1px solid var(--negro)}
+.servicio:last-child{border-bottom:1px solid var(--negro)}
+.servicio small{font-size:10px;letter-spacing:2px;font-weight:600;text-transform:uppercase}
+.servicio h3{font-size:48px;line-height:1.05;letter-spacing:1px;margin:10px 0 24px}
+.label{color:var(--rojo);font-size:10px;font-weight:700;letter-spacing:1.5px;margin-top:22px;text-transform:uppercase}
+.label+p{line-height:1.7;color:#444;margin-top:8px;max-width:600px;font-size:14px}
+.recibes h4{color:var(--rojo);font-size:10px;letter-spacing:1.5px;margin-bottom:14px;text-transform:uppercase}
+.recibes ul{list-style:none;line-height:1.6;color:#333;font-size:14px}
 .recibes li{margin-bottom:8px}
 .recibes li:before{content:"• ";font-weight:900}
-.precio{color:#e30613;font-size:24px;font-weight:900;margin:24px 0 16px}
-.metodo{background:#111;color:#fff;padding:70px 5%;display:grid;grid-template-columns:1.1fr 1.4fr;gap:60px}
-.metodo h2{font-size:62px;line-height:.95;font-weight:900;text-transform:uppercase}
-.metodo p.intro{margin-top:20px;line-height:1.7;color:#ddd;max-width:500px}
-.paso{border-top:1px solid #555;padding:18px 0;display:flex;gap:20px}
+.precio{color:var(--rojo);font-size:26px;margin:24px 0 16px}
+
+/* casos de estudio */
+.casos{padding:70px 5%;border-top:1px solid #d6d3cc}
+.casos h2{font-size:64px;line-height:1;letter-spacing:1px}
+.casos p.intro{max-width:520px;margin:18px 0 40px;line-height:1.7;color:#555;font-size:14px}
+.caso-card{background:var(--beige);padding:36px 40px;max-width:900px}
+.caso-card small{color:#666;font-weight:500;letter-spacing:1px;font-size:10px}
+.caso-card h3{font-size:40px;line-height:1.05;letter-spacing:1px;margin:10px 0 12px}
+.caso-card p{line-height:1.6;color:#555;max-width:620px;margin-bottom:24px;font-size:13px}
+
+/* método */
+.metodo{background:var(--negro);color:#fff;padding:80px 5%;display:grid;grid-template-columns:1.1fr 1.4fr;gap:60px}
+.metodo h2{font-size:64px;line-height:1;letter-spacing:1px}
+.metodo p.intro{margin-top:20px;line-height:1.7;color:#ccc;max-width:500px;font-size:14px}
+.paso{border-top:1px solid #555;padding:18px 0;display:flex;gap:22px}
 .paso:last-child{border-bottom:1px solid #555}
-.paso b{color:#e30613;font-size:28px;font-weight:900}
-.paso h4{font-size:18px;letter-spacing:1px;text-transform:uppercase}
-.paso p{color:#bbb;line-height:1.6;margin-top:6px;font-size:14px}
-.entregables{padding:70px 5%}
-.entregables h2{font-size:64px;line-height:.9;font-weight:900;text-transform:uppercase}
-.entregables p.intro{max-width:700px;margin:18px 0 40px;line-height:1.6;color:#444}
-.muestra{border-top:1px solid #111;padding:30px 0;display:grid;grid-template-columns:1fr 1fr 1fr;gap:30px}
-.muestra:last-of-type{border-bottom:1px solid #111}
-.muestra b{color:#e30613;font-size:22px}
-.muestra h3{font-size:26px;line-height:1;margin:8px 0 6px;text-transform:uppercase}
+.paso b{color:var(--rojo);font-size:30px;min-width:46px}
+.paso h4{font-size:15px;letter-spacing:1px;text-transform:uppercase;font-weight:700}
+.paso p{color:#bbb;line-height:1.6;margin-top:6px;font-size:13px}
+
+/* muestras */
+.entregables{padding:80px 5%}
+.entregables h2{font-size:64px;line-height:1;letter-spacing:1px}
+.entregables p.intro{max-width:620px;margin:18px 0 40px;line-height:1.7;color:#555;font-size:14px}
+.muestra{border-top:1px solid var(--negro);padding:30px 0;display:grid;grid-template-columns:1fr 1fr 1fr;gap:30px}
+.muestra:last-of-type{border-bottom:1px solid var(--negro)}
+.muestra b{color:var(--rojo);font-size:24px}
+.muestra h3{font-size:26px;line-height:1.05;margin:8px 0 6px;letter-spacing:.5px}
 .muestra small{color:#666;font-size:12px}
-.muestra h4{color:#e30613;font-size:11px;letter-spacing:1px;margin:16px 0 8px;text-transform:uppercase}
+.muestra h4{color:var(--rojo);font-size:10px;letter-spacing:1.5px;margin:16px 0 8px;text-transform:uppercase;font-weight:700}
 .muestra h4:first-child{margin-top:0}
 .muestra p,.muestra li{font-size:13px;line-height:1.6;color:#333}
 .muestra ul{list-style:none}
 .muestra ul li:before{content:"• ";font-weight:900}
 .muestra ol{padding-left:18px}
 .muestra ol li{margin-bottom:6px}
-.nota{font-size:12px;color:#777;margin-top:14px;line-height:1.6}
-.nosotros{padding:70px 5%;border-top:1px solid #111}
-.nosotros small{color:#e30613;font-weight:800;letter-spacing:2px;font-size:12px;text-transform:uppercase}
-.nosotros h2{font-size:56px;line-height:.95;font-weight:900;margin:14px 0 22px;max-width:800px;text-transform:uppercase}
-.nosotros p{line-height:1.7;color:#333;max-width:700px;margin-bottom:16px}
-.nosotros p.cierre{font-weight:800;color:#111}
-.contacto-final{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #111}
-.contacto-izq{padding:70px 5%}
-.contacto-izq h2{font-size:56px;line-height:.95;font-weight:900;margin:0 0 36px;text-transform:uppercase}
-.claridad{margin-bottom:28px}
-.claridad h4{color:#e30613;font-size:12px;letter-spacing:1px;margin-bottom:8px;text-transform:uppercase}
-.claridad p{line-height:1.6;color:#333;max-width:520px;font-size:14px}
-.contacto-der{padding:70px 5%;border-left:1px solid #111;background:#fff}
-.contacto-der label{color:#e30613;font-size:11px;letter-spacing:1px;font-weight:800;display:block;margin:18px 0 8px;text-transform:uppercase}
-.contacto-der input,.contacto-der select,.contacto-der textarea{width:100%;padding:14px;border:1px solid #111;background:#f4f1ea;font-size:14px}
+
+/* nosotros */
+.nosotros{padding:80px 5%;border-top:1px solid #d6d3cc}
+.nosotros h2{font-size:64px;line-height:1;letter-spacing:1px;margin:14px 0 22px;max-width:800px}
+.nosotros p{line-height:1.7;color:#444;max-width:700px;margin-bottom:16px;font-size:14px}
+.nosotros p.cierre{font-weight:700;color:var(--negro)}
+
+/* contacto */
+.contacto-final{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--negro)}
+.contacto-izq{padding:70px 5%;background:var(--beige)}
+.contacto-izq h2{font-size:56px;line-height:1;letter-spacing:1px;margin:0 0 36px}
+.claridad{margin-bottom:26px}
+.claridad h4{color:var(--rojo);font-size:10px;letter-spacing:1.5px;margin-bottom:8px;text-transform:uppercase;font-weight:700}
+.claridad p{line-height:1.6;color:#444;max-width:520px;font-size:14px}
+.contacto-der{padding:70px 5%;background:#fff}
+.contacto-der label{color:var(--rojo);font-size:10px;letter-spacing:1.5px;font-weight:700;display:block;margin:18px 0 8px;text-transform:uppercase}
+.contacto-der input,.contacto-der select,.contacto-der textarea{width:100%;padding:14px;border:1px solid var(--negro);background:var(--claro);font-size:14px}
 .contacto-der textarea{min-height:120px;resize:vertical}
-.contacto-der button{background:#111;color:#fff;padding:16px 20px;font-weight:800;letter-spacing:1px;border:0;cursor:pointer;margin-top:24px}
+.contacto-der button{background:var(--negro);color:#fff;padding:16px 22px;font-weight:700;letter-spacing:1px;border:0;cursor:pointer;margin-top:24px;font-size:12px}
 .contacto-der .aviso{font-size:11px;color:#777;margin-top:12px;line-height:1.5}
-footer{background:#111;color:#fff;padding:30px 5%;display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;font-size:12px}
-footer a{color:#fff;text-decoration:none;margin-right:14px}
-footer .legal{width:100%;color:#bbb}
-:focus-visible{outline:3px solid #e30613;outline-offset:2px}
+
+/* footer */
+footer{background:var(--negro);color:#fff;padding:34px 5%;display:grid;grid-template-columns:1fr 1fr;gap:20px;font-size:12px;align-items:start}
+footer .marca{font-family:'Anton',Impact,'Arial Narrow',sans-serif;font-size:26px;letter-spacing:1px;margin-bottom:6px;text-transform:uppercase}
+footer .tag,footer .legal{color:#ddd}
+footer .links{display:flex;flex-wrap:wrap;gap:18px;font-weight:600;margin-bottom:12px}
+footer a{color:#fff;text-decoration:none}
+
 @media(max-width:900px){
-.hero h1{font-size:52px}
-.estrategia{grid-template-columns:1fr}.estrategia h2{font-size:42px}.estrategia img{height:380px}
+.hero{grid-template-columns:1fr;gap:34px}.hero h1{font-size:56px}.hero-img img{height:400px}
+.estrategia{grid-template-columns:1fr}.estrategia h2{font-size:42px}
+.pilares{grid-template-columns:1fr}
 .servicio{grid-template-columns:1fr;gap:24px}.servicio h3{font-size:36px}
-.servicios-head h2{font-size:44px}
-.metodo{grid-template-columns:1fr}.metodo h2{font-size:44px}
-.muestra{grid-template-columns:1fr}.entregables h2{font-size:44px}
+.servicios-head h2,.casos h2,.entregables h2,.nosotros h2,.contacto-izq h2{font-size:42px}
+.caso-card{padding:26px}.caso-card h3{font-size:32px}
+.metodo{grid-template-columns:1fr}.metodo h2{font-size:42px}
+.muestra{grid-template-columns:1fr}
 .contacto-final{grid-template-columns:1fr}
-.contacto-der{border-left:0;border-top:1px solid #111}
-.nosotros h2,.contacto-izq h2{font-size:42px}
+footer{grid-template-columns:1fr}
 nav a:not(.btn-negro){display:none}
-.hero-img img{height:380px}
 }
 </style>
 </head>
 <body>
 
 <header>
-<div class="logo">MOTÍN</div>
+<a class="logo" href="#inicio">MOTÍN</a>
 <nav>
 <a href="#inicio">INICIO</a>
 <a href="#servicios">SERVICIOS</a>
+<a href="#casos">CASOS DE ESTUDIO</a>
+<a href="#entregables">MUESTRAS DE ENTREGABLES</a>
 <a href="#metodo">MÉTODO</a>
-<a href="#entregables">MUESTRAS</a>
 <a href="#nosotros">NOSOTROS</a>
 <a href="#contacto">CONTACTO</a>
 <a href="#contacto" class="btn-negro">HABLEMOS</a>
@@ -126,14 +162,14 @@ nav a:not(.btn-negro){display:none}
 <main>
 
 <div class="hero" id="inicio">
-<div class="hero-text">
+<div>
 <small>Estudio creativo independiente / Chile</small>
-<h1>No vinimos a<br>pasar<br><span>desapercibidos.</span></h1>
+<h1>No vinimos a pasar <span>desapercibidos.</span></h1>
 <p>Estrategia, creatividad y dirección para negocios que quieren dejar de improvisar y empezar a avanzar.</p>
 <a class="btn" href="#contacto">HABLEMOS DE TU NEGOCIO</a>
 </div>
 <div class="hero-img">
-<img src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?q=80&w=1200&auto=format&fit=crop" alt="Retrato editorial en blanco y negro, mirada directa y gesto desafiante.">
+<img src="hero.jpg" alt="Retrato editorial en blanco y negro, mirada directa y gesto desafiante." onerror="this.style.display='none'">
 <div>LA INDIFERENCIA NO ES UNA OPCIÓN.</div>
 </div>
 </div>
@@ -142,18 +178,23 @@ nav a:not(.btn-negro){display:none}
 
 <div class="estrategia">
 <div>
-<h2>No es más<br>contenido. Es mejor<br>estrategia.</h2>
+<h2>No es más contenido. Es mejor estrategia.</h2>
 <p class="intro">Hay negocios que publican todos los días y siguen sin vender. Otros invierten en publicidad sin entender qué está fallando. Y muchos tienen un buen producto, pero no consiguen comunicar por qué alguien debería elegirlos.<br><br>En MOTÍN creemos que crecer no consiste en hacer más por hacer más. Consiste en entender el problema, tomar mejores decisiones y ejecutar con intención.</p>
+</div>
+<div class="img">
+<img src="estrategia.jpg" alt="Composición editorial de metal cromado y esfera sobre concreto." onerror="this.style.display='none'">
+</div>
+</div>
+
+<div class="pilares">
 <div class="pilar"><b>01</b><span>Estrategia antes que improvisación.</span></div>
 <div class="pilar"><b>02</b><span>Creatividad con intención.</span></div>
 <div class="pilar"><b>03</b><span>Resultados con dirección.</span></div>
 </div>
-<img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop" alt="Composición editorial de metal cromado y esfera sobre concreto.">
-</div>
 
 <section class="servicios" id="servicios">
 <div class="servicios-head">
-<h2>No vendemos publicaciones.<br>Resolvemos problemas.</h2>
+<h2>No vendemos publicaciones. Resolvemos problemas.</h2>
 <p>Trabajamos en estrategia comercial y digital. Detectamos qué frena tu negocio y construimos el camino para avanzar.</p>
 </div>
 
@@ -285,9 +326,20 @@ nav a:not(.btn-negro){display:none}
 </div>
 </section>
 
+<section class="casos" id="casos">
+<h2>Casos de estudio</h2>
+<p class="intro">Trabajo real documentado para mostrar cómo analizamos, diagnosticamos y desarrollamos soluciones comerciales.</p>
+<div class="caso-card">
+<small>Comercio electrónico / Mascotas</small>
+<h3>Maison Mimi Paris</h3>
+<p>Dirección estratégica mensual para una tienda de productos para mascotas en el mercado chileno. Caso en desarrollo.</p>
+<a class="btn" href="caso-maison.html">VER CASO DE ESTUDIO</a>
+</div>
+</section>
+
 <section class="metodo" id="metodo">
 <div>
-<h2>Método MOTÍN.<br>De la lectura<br>a la acción.</h2>
+<h2>Método MOTÍN. De la lectura a la acción.</h2>
 <p class="intro">Un proceso de cinco etapas para entender qué necesita el negocio, definir una dirección y llevarla a acciones concretas.</p>
 </div>
 <div>
@@ -300,7 +352,7 @@ nav a:not(.btn-negro){display:none}
 </section>
 
 <section class="entregables" id="entregables">
-<h2>Muestras de<br>entregables</h2>
+<h2>Muestras de entregables</h2>
 <p class="intro">Estructuras y enfoques que pueden formar parte del trabajo: diagnóstico, marca, campañas, conversión e informes. Son demostraciones, no casos de clientes.</p>
 
 <div class="muestra">
@@ -448,12 +500,10 @@ nav a:not(.btn-negro){display:none}
 </div>
 <div></div>
 </div>
-
-<p class="nota">Nota: los indicadores y resultados deben completarse con datos reales. Esta muestra no representa resultados obtenidos por MOTÍN.</p>
 </section>
 
 <section class="nosotros" id="nosotros">
-<small>Nosotros</small>
+<span class="kicker r">Nosotros</span>
 <h2>No hacemos las cosas por hacerlas.</h2>
 <p>MOTÍN nace de una idea sencilla: los negocios necesitan algo más que presencia digital. Necesitan dirección.</p>
 <p>Somos un estudio creativo enfocado en estrategia, comunicación y crecimiento comercial. Nos interesa entender cómo funciona cada negocio, encontrar lo que puede mejorar y convertir las ideas en acciones concretas.</p>
@@ -462,11 +512,10 @@ nav a:not(.btn-negro){display:none}
 
 <section class="contacto-final" id="contacto">
 <div class="contacto-izq">
-<h2>Claridad antes<br>que compromiso</h2>
+<h2>Claridad antes que compromiso</h2>
 <div class="claridad"><h4>01 / Alcance claro</h4><p>Antes de contratar, conversamos sobre tu necesidad y revisamos qué servicio podría ajustarse mejor.</p></div>
 <div class="claridad"><h4>02 / Entregables definidos</h4><p>Cada servicio detalla qué incluye, qué recibirás y un plazo estimado. El alcance se conversa antes de comenzar.</p></div>
-<div class="claridad"><h4>03 / Sin garantías inventadas</h4><p>No prometemos ventas ni resultados asegurados. Trabajamos con diagnóstico, estrategia y acciones acordadas.</p></div>
-<div class="claridad"><h4>04 / Decisión informada</h4><p>La evaluación y orientación inicial no te obliga a contratar. Puedes decidir con la información clara.</p></div>
+<div class="claridad"><h4>03 / Decisión informada</h4><p>La evaluación y orientación inicial no te obliga a contratar. Puedes decidir con la información clara.</p></div>
 </div>
 <div class="contacto-der">
 <form id="form-contacto">
@@ -494,11 +543,11 @@ nav a:not(.btn-negro){display:none}
 </main>
 
 <footer>
-<div><strong>MOTÍN</strong><br>Estudio creativo · No vinimos a pasar desapercibidos.</div>
+<div><div class="marca">MOTÍN</div><div class="tag">Estudio creativo · No vinimos a pasar desapercibidos.</div></div>
 <div>
-<a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#metodo">Método</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a>
-</div>
+<div class="links"><a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#casos">Casos de estudio</a><a href="#entregables">Muestras</a><a href="#metodo">Método</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a></div>
 <div class="legal">Contacto · +56 9 3001 3641 · © 2026 MOTÍN</div>
+</div>
 </footer>
 
 <script>
