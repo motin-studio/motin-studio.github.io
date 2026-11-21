@@ -185,6 +185,9 @@ footer{grid-template-columns:1fr}
 nav a:not(.btn-negro){display:none}
 }
 .cual-wrap{margin-top:30px}.cual-h{font-family:Anton,sans-serif;font-size:34px;letter-spacing:1px;text-transform:uppercase;margin:0 0 6px}.cual-p{color:#444;margin:0 0 18px;font-size:15px}.cual-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.cual-card{display:flex;flex-direction:column;gap:14px;justify-content:space-between;border:2px solid #111;padding:18px 20px;text-decoration:none;color:#111;background:transparent;transition:.15s}.cual-card:hover{background:#111;color:#fff}.cual-q{font-size:18px;line-height:1.45;font-weight:500}.cual-r{font-size:13px;letter-spacing:.3px;color:#e8392e;font-weight:700}.cual-r em{font-style:normal;color:inherit;opacity:.85;font-weight:500}.cual-f{margin:16px 0 0;font-size:15px;color:#333}@media(max-width:700px){.cual-grid{grid-template-columns:1fr}}
+.diag{padding:70px 5%;border-top:1px solid #d6d3cc}.diag h2{font-size:64px;line-height:1;letter-spacing:1px;margin:14px 0 18px;max-width:800px}.diag-intro{max-width:620px;line-height:1.7;color:#555;font-size:14px;margin-bottom:34px}.err-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px 40px;max-width:980px}.err{border-top:2px solid #111;padding-top:14px}.err b{display:block;color:var(--rojo);font-size:12px;font-weight:600;margin-bottom:6px}.err span{display:block;font-weight:700;font-size:17px;line-height:1.4;margin-bottom:6px}.err p{font-size:14px;line-height:1.6;color:#444}
+.chk{margin-top:46px;background:#fff;border:2px solid #111;padding:30px 32px;max-width:980px}.chk h3{font-size:30px;line-height:1.1;letter-spacing:1px;margin-bottom:8px}.chk-sub{color:#555;font-size:14px;margin-bottom:14px}.chk label{display:flex;gap:12px;align-items:flex-start;padding:11px 0;border-bottom:1px solid #e5e2dc;font-size:15px;line-height:1.5;cursor:pointer}.chk input{margin-top:3px;width:19px;height:19px;accent-color:#e8392e;flex:none}.chk-res{margin:20px 0 16px;padding:14px 16px;background:var(--claro);border-left:4px solid var(--rojo);font-size:15px;line-height:1.55;font-weight:500}.chk .btn{margin-top:2px}
+@media(max-width:900px){.diag h2{font-size:42px}.err-grid{grid-template-columns:1fr}.chk{padding:22px 18px}.chk h3{font-size:26px}}
 </style>
 </head>
 <body>
@@ -199,7 +202,7 @@ nav a:not(.btn-negro){display:none}
 <a href="#metodo">MÉTODO</a>
 <a href="#nosotros">NOSOTROS</a>
 <a href="#contacto">CONTACTO</a>
-<a href="#contacto" class="btn-negro">HABLEMOS</a>
+<a href="https://wa.me/56930013641?text=Hola%20MOT%C3%8DN%2C%20quiero%20la%20revisi%C3%B3n%20gratis%20de%20mi%20perfil" target="_blank" rel="noopener" class="btn-negro">REVISIÓN GRATIS</a>
 </nav>
 </header>
 
@@ -212,6 +215,7 @@ nav a:not(.btn-negro){display:none}
 <p>Muchos negocios publican todos los días y siguen sin vender. Te revisamos tu perfil gratis y te decimos qué te está frenando las ventas.</p>
 <a class="btn" href="https://wa.me/56930013641?text=Hola%20MOT%C3%8DN%2C%20quiero%20la%20revisi%C3%B3n%20gratis%20de%20mi%20perfil" target="_blank" rel="noopener">REVISIÓN GRATIS DE MI PERFIL</a>
 <a href="#servicios" style="display:inline-block;margin-left:14px;font-size:12px;font-weight:700;letter-spacing:1px;color:#111;text-decoration:underline">VER SERVICIOS</a>
+<div style="margin-top:14px;font-size:13px;color:#555">Te respondemos apenas nos hables.</div>
 </div>
 <div class="hero-img">
 <img src="hero.jpg" alt="Retrato editorial en blanco y negro, mirada directa y gesto desafiante." onerror="this.style.display='none'">
@@ -238,6 +242,32 @@ nav a:not(.btn-negro){display:none}
 <div class="pilar"><b>02</b><span>Creatividad con intención.</span></div>
 <div class="pilar"><b>03</b><span>Resultados con dirección.</span></div>
 </div>
+
+<section class="diag" id="diagnostico">
+<span class="kicker r">Lo que vemos siempre</span>
+<h2>Errores reales que frenan ventas.</h2>
+<p class="diag-intro">Esto encontramos al revisar perfiles de emprendedores chilenos. Son cosas simples, y cuestan clientes todos los días.</p>
+<div class="err-grid">
+<div class="err"><b>01</b><span>El link de la bio no lleva a ninguna parte útil.</span><p>La persona quiere comprar, toca el link y se encuentra con un archivo de diseño o una página que no sirve.</p></div>
+<div class="err"><b>02</b><span>No hay destacados con catálogo, precios y cómo comprar.</span><p>Quien llega no encuentra respuestas en 5 segundos, y se va.</p></div>
+<div class="err"><b>03</b><span>El WhatsApp está escondido.</span><p>Aparece solo dentro de una imagen del logo, donde nadie puede tocarlo.</p></div>
+<div class="err"><b>04</b><span>Hay pocas publicaciones para el tamaño de la audiencia.</span><p>Miles de seguidores mirando un perfil casi vacío no se convierten en clientes.</p></div>
+</div>
+
+<div class="chk" id="chk">
+<h3>Autodiagnóstico gratis: ¿tu perfil está listo para vender?</h3>
+<p class="chk-sub">Marca lo que tu perfil YA tiene. Toma 1 minuto.</p>
+<label><input type="checkbox"> Mi bio dice qué vendo y a quién.</label>
+<label><input type="checkbox"> El link de mi bio funciona y lleva a comprar o a consultar.</label>
+<label><input type="checkbox"> Mi WhatsApp se ve y se puede tocar fácilmente.</label>
+<label><input type="checkbox"> Tengo destacados con catálogo, precios y cómo comprar.</label>
+<label><input type="checkbox"> Mis últimas publicaciones muestran el producto y dicen cómo comprarlo.</label>
+<label><input type="checkbox"> Respondo los mensajes el mismo día.</label>
+<label><input type="checkbox"> Publico con constancia, al menos 3 veces por semana.</label>
+<div class="chk-res" id="chk-res" aria-live="polite">Marca lo que ya tiene tu perfil y te decimos cómo vas.</div>
+<a class="btn" id="chk-btn" href="https://wa.me/56930013641?text=Hola%20MOT%C3%8DN%2C%20quiero%20la%20revisi%C3%B3n%20gratis%20de%20mi%20perfil" target="_blank" rel="noopener">REVISIÓN GRATIS DE MI PERFIL</a>
+</div>
+</section>
 
 <section class="servicios" id="servicios">
 <div class="servicios-head">
@@ -406,7 +436,7 @@ nav a:not(.btn-negro){display:none}
 <div class="caso-card">
 <small>Comercio electrónico / Mascotas</small>
 <h3>Maison Mimi Paris</h3>
-<p>Dirección estratégica mensual para una tienda de productos para mascotas en el mercado chileno. en desarrollo.</p>
+<p>Dirección estratégica mensual para una tienda de productos para mascotas en el mercado chileno. Caso en desarrollo.</p>
 <a class="btn" href="caso-maison.html">VER CASO DE ESTUDIO</a>
 </div>
 </section>
@@ -613,7 +643,7 @@ nav a:not(.btn-negro){display:none}
 <label for="necesidad">¿Qué quieres resolver?</label>
 <textarea id="necesidad" name="necesidad" placeholder="Cuéntanos qué quieres resolver" required></textarea>
 <button type="submit">ENVIAR POR WHATSAPP</button>
-<p class="aviso">Al enviar se abrirá WhatsApp con tu mensaje ya escrito. No se guarda nada en esta página.</p>
+<p class="aviso">Te respondemos apenas nos hables. Al enviar se abrirá WhatsApp con tu mensaje ya escrito; no se guarda nada en esta página.</p>
 </form>
 </div>
 </section>
@@ -628,7 +658,7 @@ nav a:not(.btn-negro){display:none}
 </div>
 </footer>
 
-<a class="wa-flotante" href="https://wa.me/56930013641?text=Hola%20MOT%C3%8DN%2C%20quiero%20conversar%20sobre%20mi%20negocio" target="_blank" rel="noopener">ESCRIBIR POR WHATSAPP</a>
+<a class="wa-flotante" href="https://wa.me/56930013641?text=Hola%20MOT%C3%8DN%2C%20quiero%20la%20revisi%C3%B3n%20gratis%20de%20mi%20perfil" target="_blank" rel="noopener">REVISIÓN GRATIS POR WHATSAPP</a>
 
 <script>
 document.getElementById('form-contacto').addEventListener('submit', function (e) {
@@ -639,6 +669,25 @@ document.getElementById('form-contacto').addEventListener('submit', function (e)
     'Necesito resolver: ' + f.necesidad.value;
   window.open('https://wa.me/56930013641?text=' + encodeURIComponent(texto), '_blank', 'noopener');
 });
+
+(function () {
+  var boxes = document.querySelectorAll('#chk input[type=checkbox]');
+  var res = document.getElementById('chk-res');
+  var btn = document.getElementById('chk-btn');
+  function update() {
+    var n = 0;
+    for (var i = 0; i < boxes.length; i++) { if (boxes[i].checked) n++; }
+    var msg;
+    if (n === 0) { msg = 'Marca lo que ya tiene tu perfil y te decimos cómo vas.'; }
+    else if (n <= 3) { msg = 'Marcaste ' + n + ' de 7. Tu perfil probablemente está perdiendo ventas todos los días. Te lo revisamos gratis y te decimos por dónde partir.'; }
+    else if (n <= 6) { msg = 'Marcaste ' + n + ' de 7. Vas por buen camino, pero todavía hay ventas que se te están escapando. Te decimos cuáles.'; }
+    else { msg = '7 de 7. Tu perfil está bien armado. Lo que sigue es estrategia: cómo conseguir más clientes y cerrar más ventas.'; }
+    res.textContent = msg;
+    var t = n === 0 ? 'Hola MOTÍN, quiero la revisión gratis de mi perfil' : 'Hola MOTÍN, hice el autodiagnóstico y saqué ' + n + ' de 7. Quiero la revisión gratis de mi perfil';
+    btn.href = 'https://wa.me/56930013641?text=' + encodeURIComponent(t);
+  }
+  for (var i = 0; i < boxes.length; i++) { boxes[i].addEventListener('change', update); }
+})();
 </script>
 </body>
 </html>
