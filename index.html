@@ -12,6 +12,10 @@
 <meta property="og:image" content="https://motin-studio.github.io/hero.jpg">
 <meta property="og:locale" content="es_CL">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://motin-studio.github.io/">
+<meta name="theme-color" content="#eeece7">
+<meta property="og:site_name" content="MOTÍN">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -86,15 +90,6 @@ nav a{color:var(--negro);text-decoration:none;font-weight:600}
 .servicio-d summary:after{content:"+";font-size:30px;line-height:1;font-weight:400}
 .servicio-d[open] summary:after{content:"–"}
 .servicio-d .servicio{border-top:0!important;border-bottom:0!important;padding:6px 0 50px}
-
-/* casos de estudio */
-.casos{padding:70px 5%;border-top:1px solid #d6d3cc}
-.casos h2{font-size:64px;line-height:1;letter-spacing:1px}
-.casos p.intro{max-width:520px;margin:18px 0 40px;line-height:1.7;color:#555;font-size:14px}
-.caso-card{background:var(--beige);padding:36px 40px;max-width:900px}
-.caso-card small{color:#666;font-weight:500;letter-spacing:1px;font-size:10px}
-.caso-card h3{font-size:40px;line-height:1.05;letter-spacing:1px;margin:10px 0 12px}
-.caso-card p{line-height:1.6;color:#555;max-width:620px;margin-bottom:24px;font-size:13px}
 
 /* método */
 .metodo{background:var(--negro);color:#fff;padding:80px 5%;display:grid;grid-template-columns:1.1fr 1.4fr;gap:60px}
@@ -176,8 +171,7 @@ footer a{color:#fff;text-decoration:none}
 .estrategia{grid-template-columns:1fr}.estrategia h2{font-size:42px}
 .pilares{grid-template-columns:1fr}.como{grid-template-columns:1fr}
 .servicio{grid-template-columns:1fr;gap:24px}.servicio-d summary{grid-template-columns:1fr auto;gap:12px 16px;padding:24px 0}.servicio-d summary .s-tit{grid-column:1/-1}.servicio-d summary h3{font-size:32px}.servicio-d summary .precio{font-size:20px}.servicio-d .servicio{padding:0 0 36px}
-.servicios-head h2,.casos h2,.entregables h2,.nosotros h2,.contacto-izq h2{font-size:42px}
-.caso-card{padding:26px}.caso-card h3{font-size:32px}
+.servicios-head h2,.entregables h2,.nosotros h2,.contacto-izq h2{font-size:42px}
 .metodo{grid-template-columns:1fr}.metodo h2{font-size:42px}
 .muestra{grid-template-columns:1fr}.muestra-d summary span{font-size:22px}.wa-flotante{right:12px;bottom:12px;padding:13px 16px;font-size:11px}
 .contacto-final{grid-template-columns:1fr}
@@ -197,7 +191,6 @@ nav a:not(.btn-negro){display:none}
 <nav>
 <a href="#inicio">INICIO</a>
 <a href="#servicios">SERVICIOS</a>
-<a href="#casos">CASOS DE ESTUDIO</a>
 <a href="#entregables">MUESTRAS DE ENTREGABLES</a>
 <a href="#metodo">MÉTODO</a>
 <a href="#nosotros">NOSOTROS</a>
@@ -430,17 +423,6 @@ nav a:not(.btn-negro){display:none}
 </details>
 </section>
 
-<section class="casos" id="casos">
-<h2>Casos de estudio</h2>
-<p class="intro">Casos de aplicación del método MOTÍN: cómo analizamos, diagnosticamos y desarrollamos soluciones comerciales.</p>
-<div class="caso-card">
-<small>Comercio electrónico / Mascotas</small>
-<h3>Maison Mimi Paris</h3>
-<p>Dirección estratégica mensual para una tienda de productos para mascotas en el mercado chileno. Caso en desarrollo.</p>
-<a class="btn" href="caso-maison.html">VER CASO DE ESTUDIO</a>
-</div>
-</section>
-
 <section class="metodo" id="metodo">
 <div>
 <h2>Método MOTÍN. De la lectura a la acción.</h2>
@@ -653,7 +635,7 @@ nav a:not(.btn-negro){display:none}
 <footer>
 <div><div class="marca">MOTÍN</div><div class="tag">Estudio creativo · No vinimos a pasar desapercibidos.</div></div>
 <div>
-<div class="links"><a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#casos">Casos de estudio</a><a href="#entregables">Muestras</a><a href="#metodo">Método</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a></div>
+<div class="links"><a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#entregables">Muestras</a><a href="#metodo">Método</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a></div>
 <div class="legal">WhatsApp +56 9 3001 3641 · Instagram <a href="https://instagram.com/motinstudio.cl" target="_blank" rel="noopener">@motinstudio.cl</a> · © 2026 MOTÍN</div>
 </div>
 </footer>
